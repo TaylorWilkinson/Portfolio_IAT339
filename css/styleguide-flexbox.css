@@ -32,7 +32,7 @@
   margin: 0rem 2rem;
 }
 
-.main-nav {
+.style-nav {
   -webkit-flex: 1 1 5em;
 	-ms-flex: 1 1 5em;
 	flex: 1 1 5em;
@@ -46,8 +46,8 @@
   margin: 0rem 2rem;
 }
 
-/*MAIN NAV*/
-.main-nav-container{
+/* STYLEGUIDE NAVIGATION */
+.style-nav-container{
 
   display: -webkit-flex;
 	display: -ms-flex;
@@ -70,10 +70,8 @@
 }
 
 .sub-container{
-
   display: block;
   margin: 0;
-
 }
 
 .nav-item{

@@ -27,7 +27,7 @@
 
     <!-- NAVIGATION -->
     <div class="container">
-      <div class="main-nav">
+      <div class="style-nav">
         <h2>navigation</h2>
         <nav>
           <a href="index.html" class="nav-item">Home Page</a>
@@ -57,7 +57,7 @@
           <section class="element">
             <h3>Buttons</h3>
             <h4>CSS selector</h4>
-            <p>.nav-item, .apply-para-button, .normal-button</p>
+            <p>.nav-item, .cta-button</p>
             <h4>Sample code:</h4>
             <pre>
               <code>
@@ -67,36 +67,17 @@
                 &lt;/ul&gt;
                 &lt;/nav&gt;</code>
 
-                <code>&lt;a href="login-for-product.html" class="apply-para-button"&gt;LOG IN TO APPLY&lt;/a&gt;</code>
-
-                <code>&lt;a href="lending.html" class="normal-button"&gt;MORE INFO&lt;/a&gt;</code>
+                <code>&lt;a href="#" class="cta-button"&gt;LOG IN TO APPLY&lt;/a&gt;</code>
             </pre>
             <h4>Rendered element:</h4>
+            <p>Navigation button:</p>
             <nav>
               <ul class="#">
                 <li><a href="#" class="nav-item">NAV BUTTON</a></li>
               </ul>
             </nav>
-            <a href="#" class="apply-para-button">LOG IN TO APPLY</a>
-            <a href="lending.html" class="normal-button">MORE INFO</a>
-          </section>
-
-          <!-- submit & reset buttons for forms -->
-          <section class="element">
-            <!-- <h3>Submit & Reset Button for Forms</h3> -->
-            <h3>Submit Button for Forms</h3>
-            <h4>CSS selector</h4>
-            <p>.submit-button</p>
-            <!-- <p>.reset-button</p> -->
-            <h4>Sample code:</h4>
-            <pre>
-              <code>&lt;input class="submit-button" type="submit" value="Submit"&gt;
-                &lt;a class="submit-button" href="#"&gt;Reset&lt;/a&gt;
-              </code>
-            </pre>
-            <h4>Rendered element:</h4>
-            <input class="submit-button" type="submit" value="Submit">
-            <!-- <a class="submit-button" href="#">Reset</a> -->
+            <p>Call To Action button:</p>
+            <a href="#" class="cta-button">SUBMIT</a>
           </section>
 
           <!-- text input field & label -->
@@ -214,22 +195,20 @@
               <h4>Sample code:</h4>
               <pre><code>&lt;nav&gt;
                 &lt;ul class="container"&gt;
-                &lt;li  class="nav-logo"&gt;&lt;a href="index.html" class="nav-logo-item"&gt;sprout credit union&lt;/a&gt; &lt;/li&gt;
-                &lt;li&gt;&lt;a href="products.html" class="nav-item"&gt;PRODUCTS&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="contact.html" class="nav-item"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="login.html" class="apply-button"&gt;LOGIN&lt;/a&gt;&lt;/li&gt;
+                &lt;li  class="nav-logo"&gt;&lt;a href="index.html" class="nav-logo-item"&gt;TAYLOR WILKINSON&lt;/a&gt; &lt;/li&gt;
+                &lt;li&gt;&lt;a href="#" class="nav-item"&gt;PROJECTS&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#" class="nav-item"&gt;ABOUT&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#" class="nav-item"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
                 &lt;/ul&gt;
                 &lt;/nav&gt;</code>
               </pre>
               <h4>Rendered element:</h4>
               <nav>
                 <ul class="sub-container">
-                  <!-- LOGO ON R -->
-                  <li class="nav-logo"><a href="#" class="nav-logo-item">sprout credit union</a> </li>
-                  <!-- NAV ITEMS ON L -->
-                  <li><a href="#" class="nav-item">PRODUCTS</a></li>
+                  <li class="nav-logo"><a href="#" class="nav-logo-item">TAYLOR WILKINSON</a> </li>
+                  <li><a href="#" class="nav-item">PROJECTS</a></li>
+                  <li><a href="#" class="nav-item">ABOUT</a></li>
                   <li><a href="#" class="nav-item">CONTACT</a></li>
-                  <li><a href="#" class="apply-button">LOGIN</a></li>
                 </ul>
               </nav>
             </section>
@@ -290,57 +269,41 @@
               <pre>
                 <code>
                   &lt;div class="container"&gt;
-                  &lt;p class="grid-block grid-structure col1"&gt;column 1&lt;/p&gt;
-                  &lt;p class="grid-block grid-structure col2"&gt;column 2&lt;/p&gt;
-                  &lt;p class="grid-block grid-structure col3"&gt;column 3&lt;/p&gt;
+                  &lt;p class="grid-block grid-structure col1"&gt;single column&lt;/p&gt;
                   &lt;/div&gt;
                   &lt;div class="container"&gt;
                   &lt;p class="grid-block grid-structure col1"&gt;column 1&lt;/p&gt;
                   &lt;p class="grid-block grid-structure col2"&gt;column 2&lt;/p&gt;
                   &lt;p class="grid-block grid-structure col3"&gt;column 3&lt;/p&gt;
-                  &lt;p class="grid-block grid-structure col4"&gt;column 4&lt;/p&gt;
                   &lt;/div&gt;
                 </code>
               </pre>
               <h4>Rendered element:</h4>
               <div class="container">
-                <p class="grid-block grid-structure col1">column 1</p>
-                <p class="grid-block grid-structure col2">column 2</p>
-                <p class="grid-block grid-structure col3">column 3</p>
+                <p class="grid-block grid-structure col1">single column</p>
               </div>
               <div class="container">
                 <p class="grid-block grid-structure col1">column 1</p>
                 <p class="grid-block grid-structure col2">column 2</p>
                 <p class="grid-block grid-structure col3">column 3</p>
-                <p class="grid-block grid-structure col4">column 4</p>
               </div>
+              <!-- <div class="container">
+                <p class="grid-block grid-structure col1">column 1</p>
+                <p class="grid-block grid-structure col2">column 2</p>
+                <p class="grid-block grid-structure col3">column 3</p>
+                <p class="grid-block grid-structure col4">column 4</p>
+              </div> -->
             </section>
 
             <!-- website colour swatches -->
             <section class="element">
               <h3>Website Colour Swatches</h3>
-              <h4>CSS selector:</h4>
-              <p>.container .grid-block .swatch .s[#]</p>
-              <h4>Sample code:</h4>
-              <pre>
-                <code>
-                  &lt;div class="container"&gt;
-                  &lt;p class="grid-block swatch swa1"&gt;#62D006&lt;/p&gt;
-                  &lt;p class="grid-block swatch swa2"&gt;#04A05D&lt;/p&gt;
-                  &lt;p class="grid-block swatch swa3"&gt;#2EBE80&lt;/p&gt;
-                  &lt;p class="grid-block swatch swa4"&gt;#FFFFFF&lt;/p&gt;
-                  &lt;p class="grid-block swatch swa5"&gt;#DBDBDB&lt;/p&gt;
-                  &lt;p class="grid-block swatch swa6"&gt;#2D2D2D&lt;/p&gt;
-                  &lt;/div&gt;
-                </code>
-              </pre>
-              <h4>Rendered element:</h4>
               <div class="container">
-                <p class="grid-block swatch swa1">#71B9C1</p>
-                <p class="grid-block swatch swa2">#2CA675</p>
-                <p class="grid-block swatch swa3">#0F4F46</p>
-                <p class="grid-block swatch swa4">#FFFFFF</p>
-                <p class="grid-block swatch swa5">#DBDBDB</p>
+                <p class="grid-block swatch swa1">#88BBD6</p>
+                <p class="grid-block swatch swa2">#99D3DF</p>
+                <p class="grid-block swatch swa3">#F4F4F4</p>
+                <p class="grid-block swatch swa4">#ED6A5A</p>
+                <p class="grid-block swatch swa5">#D6D6D8</p>
                 <p class="grid-block swatch swa6">#2A2A2A</p>
               </div>
             </section>
