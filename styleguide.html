@@ -1,14 +1,353 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Styleguide - Taylor Wilkinson</title>
+<head>
+  <title>P02 - IAT 339 - Styleguide</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Stylesheets -->
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/styleguide.css" rel="stylesheet">
+  <link href="css/styleguide-flexbox.css" rel="stylesheet">
 
-    <!-- Stylesheets -->
-  </head>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+</head>
 
-  <body>
-  </body>
-</html>
+<body>
+  <!-- TITLE -->
+  <div class="title">
+    <header>
+      <h1>Taylor Wilkinson</h1>
+      <h3>Episode II: The Portfolio Wars
+      </header>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="container">
+      <div class="main-nav">
+        <h2>navigation</h2>
+        <nav>
+          <a href="index.html" class="nav-item">Home Page</a>
+          <a href="#interactive" class="nav-item">Interactive Elements</a>
+          <a href="#styling" class="nav-item">Text Styling</a>
+          <a href="#combined" class="nav-item">Combined Elements</a>
+        </nav>
+      </div>
+
+      <!-- STYLE GUIDE -->
+      <!-- Interactive Elements -->
+      <div class="page-content">
+        <section id="interactive">
+          <h2>Interactive Elements</h2>
+          <!-- in-text link -->
+          <section class="element">
+            <h3>In-Text link</h3>
+            <h4>CSS selector:</h4>
+            <p>.in-text-link</p>
+            <h4>Sample code:</h4>
+            <code>&lt;a class="in-text-link" href="#"&gt;Default Link&lt;/a&gt;</code>
+            <h4>Rendered element:</h4>
+            <a class="in-text-link" href="#">Default Link</a>
+          </section>
+
+          <!-- navigation button -->
+          <section class="element">
+            <h3>Buttons</h3>
+            <h4>CSS selector</h4>
+            <p>.nav-item, .apply-para-button, .normal-button</p>
+            <h4>Sample code:</h4>
+            <pre>
+              <code>
+                &lt;nav&gt;
+                &lt;ul class="container"&gt;
+                &lt;li&gt;&lt;a href="#" class="nav-item"&gt;NAV BUTTON&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;/nav&gt;</code>
+
+                <code>&lt;a href="login-for-product.html" class="apply-para-button"&gt;LOG IN TO APPLY&lt;/a&gt;</code>
+
+                <code>&lt;a href="lending.html" class="normal-button"&gt;MORE INFO&lt;/a&gt;</code>
+            </pre>
+            <h4>Rendered element:</h4>
+            <nav>
+              <ul class="#">
+                <li><a href="#" class="nav-item">NAV BUTTON</a></li>
+              </ul>
+            </nav>
+            <a href="#" class="apply-para-button">LOG IN TO APPLY</a>
+            <a href="lending.html" class="normal-button">MORE INFO</a>
+          </section>
+
+          <!-- submit & reset buttons for forms -->
+          <section class="element">
+            <!-- <h3>Submit & Reset Button for Forms</h3> -->
+            <h3>Submit Button for Forms</h3>
+            <h4>CSS selector</h4>
+            <p>.submit-button</p>
+            <!-- <p>.reset-button</p> -->
+            <h4>Sample code:</h4>
+            <pre>
+              <code>&lt;input class="submit-button" type="submit" value="Submit"&gt;
+                &lt;a class="submit-button" href="#"&gt;Reset&lt;/a&gt;
+              </code>
+            </pre>
+            <h4>Rendered element:</h4>
+            <input class="submit-button" type="submit" value="Submit">
+            <!-- <a class="submit-button" href="#">Reset</a> -->
+          </section>
+
+          <!-- text input field & label -->
+          <section class="element">
+            <h3>Text Input Field & Label</h3>
+            <h4>CSS selector</h4>
+            <p>.text-input</p>
+            <h4>Sample code:</h4>
+            <pre>
+              <code>&lt;form class="text-input"&gt;
+                &lt;label for="example-info"&gt;Enter information:&lt;/label&gt;&lt;br&gt;
+                &lt;input type="text" name="example-info"&gt;
+                &lt;/form&gt;</code>
+              </pre>
+              <h4>Rendered element:</h4>
+              <form class="text-input">
+                <label for="example-info">Enter information:</label><br>
+                <input type="text" id="example-info">
+              </form>
+            </section>
+
+          </section>
+
+          <!-- Text Styling -->
+          <section id="styling">
+            <h2>Text Styling</h2>
+            <!-- headings -->
+            <section class="element">
+              <h3>Headings</h3>
+              <h4>CSS selectors:</h4>
+              <p>h1, h2, and h3 element tags</p>
+              <h4>Sample code:</h4>
+              <pre>
+                <code>
+                  &lt;h1&gt;header 1&lt;/h1&gt;
+                  &lt;h2&gt;header 2&lt;/h2&gt;
+                  &lt;h3&gt;header 3&lt;/h3&gt;
+                </code>
+              </pre>
+              <h4>Rendered element:</h4>
+              <h1>Heading1</h1>
+              <h2>Heading2</h2>
+              <h3>Heading3</h3>
+              <!-- -->
+            </section>
+
+            <!-- paragraph -->
+            <section class="element">
+              <h3>Paragraph</h3>
+              <h4>CSS selectors:</h4>
+              <p>p element tag</p>
+              <h4>Sample code:</h4>
+              <code>
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius quam neque, ut interdum mi volutpat eget. Suspendisse mauris turpis, gravida non purus nec, porta suscipit nisi.&lt;/p&gt;
+              </code>
+              <h4>Rendered element:</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius quam neque, ut interdum mi volutpat eget. Suspendisse mauris turpis, gravida non purus nec, porta suscipit nisi.</p>
+            </section>
+
+            <!-- bulleted list -->
+            <section class="element">
+              <h3>Bulleted List</h3>
+              <h4>CSS selector:</h4>
+              <p>ul element tag</p>
+              <h4>Sample code:</h4>
+              <pre>
+                <code>
+                  &lt;ul class="styling-bullet"&gt;
+                  &lt;li&gt;Apple&lt;/li&gt;
+                  &lt;li&gt;Orange&lt;/li&gt;
+                  &lt;li&gt;Grape&lt;/li&gt;
+                  &lt;/ul&gt;
+                </code>
+              </pre>
+              <h4>Rendered element:</h4>
+              <ul class="styling-bullet">
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>Grape</li>
+              </ul>
+            </section>
+
+            <!-- numbered list -->
+            <section class="element">
+              <h3>Numbered List</h3>
+              <h4>CSS selector:</h4>
+              <p>ol element tag</p>
+              <h4>Sample code:</h4>
+              <pre>
+                <code>
+                  &lt;ol class="styling-ordered"&gt;
+                  &lt;li&gt;Item A&lt;/li&gt;
+                  &lt;li&gt;Item B&lt;/li&gt;
+                  &lt;li&gt;Item C&lt;/li&gt;
+                  &lt;/ol&gt;
+                </code>
+              </pre>
+              <h4>Rendered element:</h4>
+              <ol class="styling-ordered">
+                <li>Item A</li>
+                <li>Item B</li>
+                <li>Item C</li>
+              </ol>
+            </section>
+          </section>
+
+          <!-- Combined Elements -->
+          <section id="combined">
+            <h2>Combined Elements</h2>
+            <!-- main navigation -->
+            <section class="element">
+              <h3>Main Navigation</h3>
+              <h4>CSS selector:</h4>
+              <p>nav element tag</p>
+              <h4>Sample code:</h4>
+              <pre><code>&lt;nav&gt;
+                &lt;ul class="container"&gt;
+                &lt;li  class="nav-logo"&gt;&lt;a href="index.html" class="nav-logo-item"&gt;sprout credit union&lt;/a&gt; &lt;/li&gt;
+                &lt;li&gt;&lt;a href="products.html" class="nav-item"&gt;PRODUCTS&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="contact.html" class="nav-item"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="login.html" class="apply-button"&gt;LOGIN&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;/nav&gt;</code>
+              </pre>
+              <h4>Rendered element:</h4>
+              <nav>
+                <ul class="sub-container">
+                  <!-- LOGO ON R -->
+                  <li class="nav-logo"><a href="#" class="nav-logo-item">sprout credit union</a> </li>
+                  <!-- NAV ITEMS ON L -->
+                  <li><a href="#" class="nav-item">PRODUCTS</a></li>
+                  <li><a href="#" class="nav-item">CONTACT</a></li>
+                  <li><a href="#" class="apply-button">LOGIN</a></li>
+                </ul>
+              </nav>
+            </section>
+          </section>
+
+          <!-- product listing -->
+          <section class="element">
+            <h3>Product Listing</h3>
+            <h4>CSS selector:</h4>
+            <p>.product, .product-text, .block</p>
+            <h4>Sample code:</h4>
+            <pre>
+              <code>&lt;a href="about.html" class="block"&gt;
+                &lt;img src="image/fistbump.jpeg"  class="main-blocks-content" alt="block-content"&gt;
+                &lt;h2>about us&lt;/h2&gt;
+                &lt;p class="index-item-dexcription">Find out more about us as a credit union! We thrive to assist our clients to achieve their life goals. Visit here to see what other people are saying about us!&lt;/p&gt;
+              &lt;/a&gt;</code>
+              <code>&lt;div class="product"&gt;
+                &lt;h2 class="product-text"&gt;SPROUT MORTGAGE&lt;/h2&gt;
+                &lt;p class="product-text"&gt;Lorem ipsum dolor sit amet, quis nibh nec auctor, dictumst in at non quisque elit, morbi id sit erat, potenti wisi dictum amet, lectus id.&lt;/p&gt;
+                &lt;a href="apply.html" class="normal-button"&gt;Apply Now&lt;/a&gt;
+                &lt;/div&gt;</code>
+
+                <code>&lt;div class="product"&gt;
+                  &lt;h2 class="product-text"&gt;No-Fee Chequing&lt;/h2>&gt;
+                  &lt;p class="product-text"&gt;Here’s a no-fuss chequing account for your daily banking needs. Don’t get charged anything for your daily chequing transactions (i.e. point of sale transactions, pre-authorized debits, Canadian credit union ATM withdrawals, in branch withdrawals, in and branch bill payments.)&lt;/p&gt;
+                  &lt;a href="#" class="apply-para-button">LOG IN TO APPLY&lt;/a&gt;
+                  &lt;/div&gt;</code>
+              </pre>
+              <h4>Rendered element:</h4>
+              <div class="index-block-content-container">
+              <a href="#" class="block">
+                <img src="image/fistbump.jpeg"  class="main-blocks-content" alt="block-content">
+                <h2>about us</h2>
+                <p class="index-item-dexcription">Find out more about us as a credit union! We thrive to assist our clients to achieve their life goals. Visit here to see what other people are saying about us!</p>
+              </a>
+            </div>
+
+              <div class="product">
+                <h2 class="product-text">Banking Accounts</h2>
+                <p class="product-text">Accounts for your daily transactional and savings needs. All of our options give you value and flexibility that the other guys just can’t figure out.</p>
+                <a href="#" class="normal-button">MORE INFO</a>
+              </div>
+
+              <div class="product">
+                <h2 class="product-text">No-Fee Chequing</h2>
+                <p class="product-text">Here’s a no-fuss chequing account for your daily banking needs. Don’t get charged anything for your daily chequing transactions (i.e. point of sale transactions, pre-authorized debits, Canadian credit union ATM withdrawals, in branch withdrawals, in and branch bill payments.)</p>
+                <a href="#" class="apply-para-button">LOG IN TO APPLY</a>
+              </div>
+            </section>
+
+            <!-- website grid structure -->
+            <section class="element">
+              <h3>Website Grid Structure</h3>
+              <h4>CSS selector:</h4>
+              <p>.container .grid-block .col[#]</p>
+              <h4>Sample code:</h4>
+              <pre>
+                <code>
+                  &lt;div class="container"&gt;
+                  &lt;p class="grid-block grid-structure col1"&gt;column 1&lt;/p&gt;
+                  &lt;p class="grid-block grid-structure col2"&gt;column 2&lt;/p&gt;
+                  &lt;p class="grid-block grid-structure col3"&gt;column 3&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class="container"&gt;
+                  &lt;p class="grid-block grid-structure col1"&gt;column 1&lt;/p&gt;
+                  &lt;p class="grid-block grid-structure col2"&gt;column 2&lt;/p&gt;
+                  &lt;p class="grid-block grid-structure col3"&gt;column 3&lt;/p&gt;
+                  &lt;p class="grid-block grid-structure col4"&gt;column 4&lt;/p&gt;
+                  &lt;/div&gt;
+                </code>
+              </pre>
+              <h4>Rendered element:</h4>
+              <div class="container">
+                <p class="grid-block grid-structure col1">column 1</p>
+                <p class="grid-block grid-structure col2">column 2</p>
+                <p class="grid-block grid-structure col3">column 3</p>
+              </div>
+              <div class="container">
+                <p class="grid-block grid-structure col1">column 1</p>
+                <p class="grid-block grid-structure col2">column 2</p>
+                <p class="grid-block grid-structure col3">column 3</p>
+                <p class="grid-block grid-structure col4">column 4</p>
+              </div>
+            </section>
+
+            <!-- website colour swatches -->
+            <section class="element">
+              <h3>Website Colour Swatches</h3>
+              <h4>CSS selector:</h4>
+              <p>.container .grid-block .swatch .s[#]</p>
+              <h4>Sample code:</h4>
+              <pre>
+                <code>
+                  &lt;div class="container"&gt;
+                  &lt;p class="grid-block swatch swa1"&gt;#62D006&lt;/p&gt;
+                  &lt;p class="grid-block swatch swa2"&gt;#04A05D&lt;/p&gt;
+                  &lt;p class="grid-block swatch swa3"&gt;#2EBE80&lt;/p&gt;
+                  &lt;p class="grid-block swatch swa4"&gt;#FFFFFF&lt;/p&gt;
+                  &lt;p class="grid-block swatch swa5"&gt;#DBDBDB&lt;/p&gt;
+                  &lt;p class="grid-block swatch swa6"&gt;#2D2D2D&lt;/p&gt;
+                  &lt;/div&gt;
+                </code>
+              </pre>
+              <h4>Rendered element:</h4>
+              <div class="container">
+                <p class="grid-block swatch swa1">#71B9C1</p>
+                <p class="grid-block swatch swa2">#2CA675</p>
+                <p class="grid-block swatch swa3">#0F4F46</p>
+                <p class="grid-block swatch swa4">#FFFFFF</p>
+                <p class="grid-block swatch swa5">#DBDBDB</p>
+                <p class="grid-block swatch swa6">#2A2A2A</p>
+              </div>
+            </section>
+          </div>
+        </div>
+        <footer>
+          <a href="styleguide.html">STYLEGUIDE</a> |  <a href="citations.html">CITATIONS</a> | <a href="index.html">HOME PAGE</a>
+        </footer>
+      </body>
+      </html>
