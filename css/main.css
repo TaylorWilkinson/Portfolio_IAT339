@@ -1,0 +1,258 @@
+body {
+  color: #2A2A2A;
+}
+
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #99D3DF;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #88BBD6;
+  font-weight: 400;
+  margin: 0.5rem 0rem;
+  font-size: 1.50rem;
+  max-width:100%;
+}
+
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #88BBD6;
+  font-weight: 400;
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin: 0.75rem 0rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+p, ol, ul {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.90rem;
+}
+
+p {
+  max-width: 75rem;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: #D6D6D8;
+  transition: color 0.5s;
+}
+
+a:active, a:hover, a:focus {
+  color: #99D3DF;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+/* Style Guide Code */
+pre {
+  display: block;
+  white-space: pre-wrap;
+}
+
+section code {
+  background-color: #DADADA;
+  padding: 0.5em 0.75em;
+  display: block;
+  max-width:100%
+}
+
+/* Forms & Input */
+form {
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+}
+
+label {
+  padding-right: 0.5rem;
+}
+
+input[type=text] {
+  font-family: 'Open Sans', sans-serif;
+  width: 30%;
+  margin-top: 0.5rem;
+  padding: 7px 7px;
+  border: 1px solid #DBDBDB;
+  border-radius: 5px;
+}
+
+
+/* Call To Action Button*/
+.cta-button {
+  display: inline-block;
+  margin:1rem 0.5rem;
+  color: #FFFFFF;
+  background-color: #99D3DF;
+  padding: 0.50em 1rem;
+  border-color: #99D3DF;
+  border-radius: 15px;
+  border-style:solid;
+  border-width:thin;
+  text-decoration: none;
+  -webkit-transition: border-color 0.3s ease-out, color 0.3s ease-out, background-color 0.3s ease-out;
+  transition: border-color 0.3s ease-out, color 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.cta-button:hover, .cta-button:focus {
+  background-color: #FFFFFF;
+  border-color: #99D3DF;
+  color: #99D3DF;
+}
+
+/*BULLETED POITNS AND ORDERD POINTS*/
+
+.styling-bullet{
+  list-style-type: disc;
+  color:#2D2D2D;
+  font-size:1rem;
+  line-height:1.8rem;
+}
+
+.styling-ordered{
+  color:#2D2D2D;
+  font-size:1.1rem;
+  line-height:1.8rem;
+}
+
+/* Images */
+img {
+  width: 80%;
+  height: auto;
+}
+
+figure {
+  margin: 1em 0px;
+}
+
+figcaption {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 0.75rem;
+}
+
+section p {
+  margin-top: 0;
+}
+
+footer {
+  position: fixed;
+  bottom:0;
+  width:100%;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+
+/* NAVIGATION */
+nav {
+  width: 100%;
+  padding: 0 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  margin: 1rem 0.3rem;
+}
+
+.nav-logo {
+  margin-right: auto;
+}
+
+.nav-logo-item {
+  max-width: 100%;
+  margin: 0.5rem 2.5rem;
+  margin-left: 0;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #99D3DF;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+
+.nav-item {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: right;
+  padding: 0 1.5rem;
+  padding-top: 0.50rem;
+  color: #ED6A5A;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.nav-item:hover, .nav-item:focus{
+  color: #2A2A2A;
+}
+
+
+
+/* Banneers */
+.banner {
+  max-width: 100%;
+  position: relative;
+}
+
+.full-img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.banner-txt{
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10rem 0;
+  text-align: center;
+}
+
+.banner-txt h1, h2 {
+  color: #FFFFFF;
+}
+
+.banner-txt h1 {
+  font-size: 3rem;
+}
+
+.banner-txt h2 {
+  font-size: 2rem;
+}
+
+
+.content-container {
+  width: 60%;
+}
+
+/* PROJECTS PAGE */
+.process {
+  padding: 1rem 0rem;
+}
+
+#proj1 {
+  border-bottom: 0.10em solid #D6D6D8;
+  /* width: 60%; */
+}
+
+/* ABOUT PAGE */
+.bio {
+  padding: 1rem 0rem;
+}
