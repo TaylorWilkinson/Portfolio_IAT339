@@ -129,12 +129,12 @@ input[type=text] {
 
 /* Images */
 img {
-  width: 80%;
+  margin: 0;
+  padding: 0;
   height: auto;
 }
 
-figure {
-  margin: 1em 0px;
+ {
 }
 
 figcaption {
@@ -243,16 +243,15 @@ nav li {
 }
 
 /* PROJECTS PAGE */
-.process {
+/* .process {
   padding: 1rem 0rem;
-}
+} */
 
 #proj1 {
   border-bottom: 0.10em solid #D6D6D8;
-  /* width: 60%; */
 }
 
 /* ABOUT PAGE */
-.bio {
-  padding: 1rem 0rem;
+.bio-text {
+  width: 55%;
 }

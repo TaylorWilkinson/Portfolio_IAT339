@@ -108,6 +108,26 @@
   justify-content: space-around;
 }
 
+img {
+	display: block;
+  justify-content: space-around;
+}
+
+.bio {
+	display: inline-flex;
+	flex-direction: row;
+}
+
+.bio img {
+  display: inline-flex;
+	margin-left: 0.5rem;
+}
+
+.bio-text {
+	text-align: left;
+}
+
+
 
 
 
