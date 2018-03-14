@@ -3,13 +3,13 @@ body {
 }
 
 h1 {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #99D3DF;
   font-weight: 400;
 }
 
 h2 {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #88BBD6;
   font-weight: 400;
   margin: 0.5rem 0rem;
@@ -18,7 +18,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #88BBD6;
   font-weight: 400;
   margin: 0.5rem 0;
@@ -27,14 +27,14 @@ h3 {
 
 h4 {
   margin: 0.75rem 0rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 1rem;
 }
 
 p, ol, ul {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   font-size: 0.90rem;
 }
 
@@ -43,7 +43,7 @@ p {
 }
 
 a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   color: #D6D6D8;
   transition: color 0.5s;
@@ -72,7 +72,7 @@ section code {
 
 /* Forms & Input */
 form {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: block;
 }
 
@@ -81,7 +81,7 @@ label {
 }
 
 input[type=text] {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   width: 30%;
   margin-top: 0.5rem;
   padding: 7px 7px;
@@ -138,7 +138,7 @@ img {
 }
 
 figcaption {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 0.75rem;
@@ -149,9 +149,9 @@ section p {
 }
 
 footer {
-  position: fixed;
-  bottom:0;
-  width:100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   padding: 1rem;
   text-align: center;
   font-size: 0.75rem;
@@ -159,9 +159,15 @@ footer {
 
 
 /* NAVIGATION */
+
 nav {
   width: 100%;
-  padding: 0 2.5rem;
+  padding: 0 12.5%;
+  text-align: center;
+}
+
+.sub-container {
+  padding: 0;
 }
 
 nav ul {
@@ -169,7 +175,7 @@ nav ul {
 }
 
 nav li {
-  margin: 1rem 0.3rem;
+  margin: 0.75rem 0;
 }
 
 .nav-logo {
@@ -178,29 +184,30 @@ nav li {
 
 .nav-logo-item {
   max-width: 100%;
-  margin: 0.5rem 2.5rem;
   margin-left: 0;
   text-align: center;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #99D3DF;
   font-weight: 400;
   font-size: 1.75rem;
 }
 
+.nav-logo-item:hover, .nav-logo-item:focus{
+  color: #88BBD6;
+}
+
 .nav-item {
   display: inline-block;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 300;
   text-align: right;
-  padding: 0 1.5rem;
-  padding-top: 0.50rem;
-  color: #ED6A5A;
+  color: #2A2A2A;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
 }
 
 .nav-item:hover, .nav-item:focus{
-  color: #2A2A2A;
+  color: #ED6A5A;
 }
 
 
@@ -225,16 +232,14 @@ nav li {
   text-align: center;
 }
 
-.banner-txt h1, h2 {
-  color: #FFFFFF;
-}
-
 .banner-txt h1 {
   font-size: 3rem;
+  color: #99D3DF;
 }
 
 .banner-txt h2 {
   font-size: 2rem;
+  color: #88BBD6;
 }
 
 
