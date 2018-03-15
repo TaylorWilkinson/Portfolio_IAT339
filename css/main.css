@@ -150,6 +150,7 @@ section p {
 
 footer {
   position: absolute;
+  top: 100%;
   bottom: 0;
   width: 100%;
   padding: 1rem;
@@ -213,31 +214,27 @@ nav li {
 
 
 /* Banneers */
-.banner {
-  max-width: 100%;
+.banner img {
   position: relative;
-}
-
-.full-img {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: auto;
 }
 
-.banner-txt{
-  position: absolute;
-  width: 100%;
-  margin: 0 auto;
-  padding: 10rem 0;
-  text-align: center;
+.banner-txt {
+  position: relative;
+  margin: 0.5rem 2rem;
 }
 
-.banner-txt h1 {
+.banner-title {
+  text-align: center;
+  margin: 0.5rem 0;
   font-size: 3rem;
   color: #99D3DF;
 }
 
-.banner-txt h2 {
+.banner-description {
+  text-align: center;
   font-size: 2rem;
   color: #88BBD6;
 }
