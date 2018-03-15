@@ -124,10 +124,9 @@ img {
 	.banner-txt {
 		position: absolute;
 		top: 0;
-    /* bottom: 2.5rem; */
     right: auto;
     left: auto;
-		margin: 7.5% 12.5%;
+		margin: 10% 12.5%;
 		max-width: 50%;
 
     -webkit-justify-content: flex-start;
@@ -137,12 +136,18 @@ img {
 
 	.banner-title {
 		text-align: left;
-		color: #FFFFFF;
+		/* color: #ED6A5A; red */
+		color: #99D3DF;
+		/* color: #88BBD6; */
 	}
 
 	.banner-description {
 		text-align: left;
-		color: #FFFFFF;
+		color: #F4F4F4;
+	}
+
+	.banner-content {
+		text-align: left;
 	}
 }
 
