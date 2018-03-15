@@ -149,9 +149,9 @@ section p {
 }
 
 footer {
-  position: absolute;
+  /* position: absolute;
   top: 100%;
-  bottom: 0;
+  bottom: 0; */
   width: 100%;
   padding: 1rem;
   text-align: center;
@@ -194,7 +194,8 @@ nav li {
 }
 
 .nav-logo-item:hover, .nav-logo-item:focus{
-  color: #88BBD6;
+  /* color: #88BBD6; */
+  color: #ED6A5A;
 }
 
 .nav-item {
@@ -235,7 +236,7 @@ nav li {
 
 .banner-description {
   text-align: center;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   color: #88BBD6;
 }
 
