@@ -20,67 +20,85 @@
     <nav>
       <ul class="sub-container">
         <li class="nav-logo"><a href="index.html" class="nav-logo-item">TAYLOR WILKINSON</a> </li>
-        <li><a href="projects.html" class="nav-item">PROJECTS</a></li>
+        <li><a href="projects.html" class="nav-item">WORK</a></li>
         <li><a href="about.html" class="nav-item">ABOUT</a></li>
-        <li><a href="contact.html" class="nav-item">CONTACT</a></li>
       </ul>
     </nav>
 
     <section class="banner">
       <div class = "full banner">
-        <img src="img/MyShapeBoard.jpg" class="full-img" alt="Photograph of code written for the MyShapeBoard group project">
+        <img src="img/MyShapeBoard-crop.jpg" class="full-img" alt="Photograph of code written for the MyShapeBoard group project">
         <div class="banner-txt">
           <h1 class="banner-title">PROJECTS</h1>
-          <h2 class="banner-description">Hey guys! Look at what I can do!</h2>
-          <p class="banner-content">
-            <a href="#proj1" class="cta-button">THE STUDIOUS CHEF</a>
-            <a href = "#proj2" class="cta-button">ADOPTION AWARENESS MONTH</a>
-          </p>
+          <h2 class="banner-description">Hey! Look at what I can do!<br>Feel free to also check out my <a href="img/TaylorWilkinson_Resume_2018.pdf" target="_blank">resume</a> and my <a href="https://github.com/TaylorWilkinson/" target="_blank">GitHub</a>.
+            <!-- <a href="#proj1" class="cta-button">THE STUDIOUS CHEF</a>
+            <a href = "#proj2" class="cta-button">ADOPTION AWARENESS MONTH</a> -->
         </div>
       </div>
     </section>
 
-  <!--
-  Based on the visual ethos, complete a process analysis of 2 projects that support your ethos and show a project from start to finish. Text and accompanying artifacts must demonstrate your ability to think through a problem and iterate a project over time. Consider how these projects speak to the abilities you are presenting as part of your ethos. Aim to use 250-300 words for each analysis.
-  -->
-
     <section class="content-container">
       <!-- Process Analysis #1 -->
-      <figure>
-        <img src="img/studious-chef.png" alt="Mockup image that displays The Studious Chef on a desktop computer">
-        <figcaption>Mockup image that displays The Studious Chef on a desktop computer. March 2017.</figcaption>
-      </figure>
       <div class="process" id="proj1">
-        <h2>The Studious Chef</h2>
-        <h3>My Role:</h3>
-        <p>Web Developer & Designer</p>
-        <h3>Brief:</h3>
-        <p>Develop a web application using a database of our own choosing that implements a set of required technologies.<br>
-          This was a final course project for IAT 352 - Internet Computing Technologies. March 2017.
-        </p>
-        <h3>Process:</h3>
-        <p>When I approached with this project, I came up with the idea for The Studious Chef: a website that would help students cook proper meals for themselves by providing a consolidated list of delicious recipes posted by students, for students. With this in mind, I wanted this website to look clean, simple and approachable to the user, so I restricted the colours being used to black and white with some powder blue accents.</p>
-        <p>With this project, I had the opportunity to learn several new programming languages as well as gaining more experience with HTML and CSS. The webpages were coded in PHP, with embedded HTML and CSS in order to realize the design. AJAX was used in order to support live filtering and updating on the recipe browsing page. Finally, MySQL was used to handle database requests, such as logging in or fetching recipes from the "recipe" database.</p>
-        <p>After determining the website concept, I realized the database design through ER diagrams. The database of recipes was built in XAMPP with 20 recipes to begin with, which allowed non-registered users to still browse content if there was no member-generated contents.</p>
+        <h1>The Studious Chef</h1>
+        <div id="project-images">
+          <figure>
+            <img src="img/studious-chef.png" alt="Mockup image that displays The Studious Chef on a desktop computer">
+            <figcaption>Mockup image that displays The Studious Chef on a desktop computer. 2017.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="img/chef_XAMPP.png" alt="Original proposed ER model diagram for The Studious Chef">
+            <figcaption>Original proposed ER model diagram for The Studious Chef. March 2017.</figcaption>
+          </figure>
+        </div>
+        <div id=content-text>
+          <h2>My Role:</h2>
+          <p>Web Developer & Designer</p>
+
+          <h2>Brief:</h2>
+          <p>Develop a web application using a database of our own choosing that implements a set of required technologies.<br>
+              This was a final course project for IAT 352 - Internet Computing Technologies. March 2017.</p>
+
+          <h2>Process:</h2>
+          <p>When I approached with this project, I came up with the idea for The Studious Chef: a website that would help students cook proper meals for themselves by providing a consolidated list of delicious recipes posted by students, for students. With this in mind, I wanted this website to look clean, simple and approachable to the user, so I restricted the colours being used to black and white with some powder blue accents.</p>
+          <p>With this project, I had the opportunity to learn several new programming languages as well as gaining more experience with HTML and CSS. The webpages were coded in PHP, with embedded HTML and CSS in order to realize the design. AJAX was used in order to support live filtering and updating on the recipe browsing page. Finally, MySQL was used to handle database requests, such as logging in or fetching recipes from the "recipe" database.</p>
+          <p>After determining the website concept, I realized the database design through ER diagrams. The database of recipes was built in XAMPP with 20 recipes to begin with, which allowed non-registered users to still browse content if there was no member-generated contents.</p>
+        </div>
       </div>
 
       <!-- Process Analysis #2 -->
-      <figure class="proj-img">
-        <img src="img/AAM_thumbnail.png" alt="Thumbnail made for one of the Adoption Awareness Month Videos.">
-        <figcaption>Thumbnail made for one of the Adoption Awareness Month Videos. November 2017.</figcaption>
-      </figure>
       <div class="process" id="proj2">
-          <h2>Adoption Awareness Month</h2>
-          <h3>My Role:</h3>
-          <p>Communications Co-ordinator, Primary Designer, Video Edito</p>
-          <h3>Brief:</h3>
-          <p>Proposed and executed a social media campaign for the Adoptive Families Association of BC (AFABC) in light of Adoption Awareness Month. November 2017.</p>
-          <h3>Process:</h3>
-          <p>The month leading up to Adoption Awareness Month, I learned about communications planning and developing messaging for digital content. With the Publications Coordinator and the Communications Manager, we determined the primary message and goals for AFABC’s Adoption Awareness Month campaign. At this stage, we determined roles, responsibilities, and projects for the month. I suggested creating a series of videos for AFABC’s social media, which became my personal project.</p>
-          <p>The video campaign for Adoption Awareness Month was completely conceptualized and executed by myself, which made it my major contribution to the overall campaign. The goal of these short videos was to normalize adoption and celebrate adoptive families. I used pre-recorded footage of adoptees and adoptive parents from a recent open house hosted by AFABC, and re-created animated video bumpers that had been made for them several years prior.</p>
-          <p>Setting a project timeline was exteremly important, as I needed to create these videos on my own while continuing to co-ordinate other events and handle my other daily tasks. After setting my timeline to ensure I'd meet my November 1st deadline, I selected videos and music that were similar in tone and message while supporting the “#FamilyEverybodyNeedsOne” tagline. Once deciding on the videos and messaging, I began creating both the video bumpers and finalized videos. I had no prior experience with Premiere Pro, which was what I had to work with, so I sought out online tutorials to teach myself the basics and learned on the job.</p>
-          <p>Despite having planned to only create four videos, I was able to manage my time effectively and made six videos for the month: four that focused on young adoptees speaking about what the word “family” meant to them, and two that focused on giving advice for prospective adoptive parents and to kids going through the adoption process. They were well received on social media, getting the most engagement on Facebook as that’s where the majority of AFABC’s online followers are.</p>
+        <h1>Retrofit Your Home</h1>
+        <div id="project-images">
+          <figure>
+            <img src="img/retrofit-mockup.png" alt="Mockup image that displays the Retrofit Your Home website on a desktop computer">
+            <figcaption>Mockup image that displays the Retrofit Your Home website on a desktop computer.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="img/retrofit_wireframe.png" alt="Axure wireframe of the Retrofit Your Home website">
+            <figcaption>Axure wireframe of the Retrofit Your Home website.</figcaption>
+          </figure>
+        </div>
+        <div id=content-text>
+          <h2>My Role:</h2>
+          <p>Web Developer; User Experience Developer</p>
+          <h2>Brief:</h2>
+          <p>Design, code and present a responsive website about retrofitting your home, based on data provided by City Studio Vancouver.<br>
+          This was a group course project for Information Design course (IAT 235). 2015.</p>
+
+          <h2>Process:</h2>
+          <p>Our team started by analyzing the provided data of 500 homes, determining 3 factors to consider when retrofitting one's home: cost, environmental, and lifestyle. With this information, we determined the information architecture of the website through basic wireframing. After determining our desired user flow, we moved on to create higher fidelity wireframes of our website using Axure RP. In this phase we continued refining our content, created more detailed blocked elements and played with different interaction elements that we could incorporate.</p>
+          <p>Once we determined our website's architecture and overall design, all three team members wrote equal portions of the website's code. I personally wrote the environment page and it's two subsections. Additionally, I was responsible for consolidating all 11 pages and maintaining their responsive design. HTML5 and CSS were used to build the site.</p>
+
+          <a class="cta-button" href="http://www.sfu.ca/~tjwilkin/IAT%20235/Project%204%20-%20April,%20Salathiel,%20Taylor/P04/landingPage.html">SEE WEBSITE</a>
+        </div>
       </div>
     </section>
+
+    <footer>
+      <a href="styleguide.html">STYLEGUIDE</a> |  <a href="citations.html">CITATIONS</a>
+    </footer>
   </body>
 </html>

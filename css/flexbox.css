@@ -114,8 +114,9 @@ img {
 	}
 }
 
+
 /* BANNER */
-@media(min-width: 40.625em){
+@media(min-width: 40.625em) {
 	/* nav bar changes to single line */
   .banner {
 		position: relative;
@@ -148,6 +149,46 @@ img {
 
 	.banner-content {
 		text-align: left;
+	}
+}
+
+/* PROJECTS PAGE */
+@media(min-width: 40.625em) {
+	.content-container {
+	  margin: 0 auto;
+	}
+
+	.process {
+		border: none;
+	}
+
+	#content-text {
+		width: 50%;
+	}
+
+	.process h1, h2 {
+		text-align: left;
+	}
+
+	#project-images {
+		float: right;
+		width: 40%;
+	}
+}
+
+/* ABOUT PAGE */
+@media(min-width: 40.625em) {
+	.content-container {
+	  margin: 0 auto;
+	}
+
+	#bio-text {
+		width: 50%;
+	}
+
+	#bio-image {
+		float: right;
+		width: 40%;
 	}
 }
 

@@ -1,6 +1,5 @@
 body {
   color: #2A2A2A;
-  /* background-color: #F4F4F4; */
 }
 
 h1 {
@@ -47,7 +46,7 @@ a {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   text-decoration: none;
-  color: #2A2A2A;
+  color: #99D3DF;
   transition: color 0.5s;
   transition: font-weight: 0.5s;
 }
@@ -116,8 +115,7 @@ input[type=text] {
   color: #ED6A5A;
 }
 
-/*BULLETED POITNS AND ORDERD POINTS*/
-
+/*BULLETED POITNS AND ORDERED POINTS*/
 .styling-bullet{
   list-style-type: disc;
   color:#2D2D2D;
@@ -135,13 +133,17 @@ input[type=text] {
 img {
   margin: 0;
   padding: 0;
+  width: 100%;
   height: auto;
 }
 
- {
+figure {
+  width: 100%;
+  margin: 1rem 0;
 }
 
 figcaption {
+  text-align: center;
   font-family: 'Roboto', sans-serif;
   font-style: italic;
   font-weight: 100;
@@ -153,9 +155,6 @@ section p {
 }
 
 footer {
-  /* position: absolute;
-  top: 100%;
-  bottom: 0; */
   width: 100%;
   padding: 1rem;
   text-align: center;
@@ -166,6 +165,7 @@ footer {
 /* NAVIGATION */
 
 nav {
+  background-color: #FFFFFF;
   width: 100%;
   padding: 0 12.5%;
   text-align: center;
@@ -254,19 +254,31 @@ nav li {
 
 
 .content-container {
-  width: 60%;
+  width: 75%;
 }
 
 /* PROJECTS PAGE */
-/* .process {
-  padding: 1rem 0rem;
-} */
 
-#proj1 {
-  border-bottom: 0.10em solid #D6D6D8;
+.process {
+  border-top: 1.5px solid #D6D6D8;
+  padding: 1rem 0;
 }
 
+.process h1 {
+  text-align: center;
+}
+
+#proj1, #proj2 {
+  margin: 1rem 0;
+}
+
+
 /* ABOUT PAGE */
-.bio-text {
-  width: 55%;
+.about {
+  border-top: 1.5px solid #D6D6D8;
+  padding: 1rem 0;
+}
+
+.process h1 {
+  text-align: center;
 }
