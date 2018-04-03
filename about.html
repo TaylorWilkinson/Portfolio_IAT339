@@ -1,51 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Taylor Wilkinson - About Me</title>
-
+<head>
+  <title>Bootstrap Portfolio - Home </title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- Stylesheets -->
+    <!-- Normalize stylesheet -->
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Personal Stylesheets -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/flexbox.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-  </head>
+</head>
 
-  <body>
-    <nav>
-      <ul class="sub-container">
-        <li class="nav-logo"><a href="index.html" class="nav-logo-item">TAYLOR WILKINSON</a> </li>
-        <li><a href="projects.html" class="nav-item">WORK</a></li>
-        <li><a href="about.html" class="nav-item">ABOUT</a></li>
-      </ul>
-    </nav>
+<body>
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-light navbar-expand-sm" id="navbar-bg">
+    <div class="container">
 
-    <section class="content-container">
-      <!-- Process Analysis #1 -->
-      <div class="process">
-        <div id="project-images">
-          <figure>
-            <img src="img/me.jpg" alt="Photograph of me beside my dog.">
-          </figure>
-        </div>
-        <div id=content-text>
-          <h2>"Hello? Is it me you're looking for?"</h2>
-          <p>My name is Taylor and I'm an aspiring front-end web developer with an interest in user-experience design. I'm pursing my B.Sc. in Interactive Arts and Technology at Simon Fraser University.</p>
-          <p>My goal as a developer is to create applications with clean and efficient code while maintaining an enjoyable and functional experiences for the user. As an articulate communicator, I easily engage with stakeholders to create a refined product. I'm your friendly, neighbourhood <a href="https://www.16personalities.com/infp-personality" target="_blank">Myers-Briggs INFP</a>, so you can count on me to stay calm and collected in any situation.</p>
-          <p>In my free time I enjoy going for walks, Dungeons & Dragons, and playing video games.  Outside of work-related topics, you can talk with me about baking, the art of drag, and your pet dog (pictured right).</p>
-          <h3>Want to contact me?</h3>
-          <p>Feel free to <a href="mailto:tjwilkin@sfu.ca?Subject=Portfolio%20Contact%20-%20Hello!" target="_top">e-mail me</a>!</p>
-        </div>
-      </div>
-    </section>
+      <a href="index.html" class="nav-item nav-link active navbar-brand" id="navLogo">
+        <img src="img/icon.png">
+      </a>
 
-    <footer>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNavBar" aria-controls="toggleNavBar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> <!-- hamburger button -->
+
+      <div class="collapse navbar-collapse" id="toggleNavBar">
+        <div class="navbar-nav ml-auto">
+          <a href="projects.html" class="nav-item nav-link" id="navLink">WORK</a>
+          <a href="about.html" class="nav-item nav-link" id="navLink">ABOUT</a>
+        </div> <!-- Navigation bar -->
+      </div> <!-- Collapse -->
+    </div>
+  </nav>
+
+  <div class="container ml-auto">
+    <div class="col-lg" id="page-header">
+      <h1 class="pull-left" id="about-header">about me</h1>
+    </div>
+    <div class="row">
+      <section class="col-lg-6">
+        <p>My name is Taylor Wilkinson and I'm a front-end web developer with a strong interest in user-experience design. I'm based out of Vancouver, B.C., and I'm pursing a B.Sc. in Interactive Arts and Technology with a concentration in Interactive Systems.</p>
+        <p>My goal is to grow as a developer and designer by creating applications that provide experiences that are not only enjoyable for the user, but are considerate of a diverse userbase regardless of economic, or ethnic status. As an articulate communicator, I'm able to engage with coworkers and customers alike to achieve the most desired result. I'm your friendly, neighbourhood Myers-Briggs INFP.</p>
+        <p>I enjoy going for walks around the Greater Vancouver area, hobbyist photography, and Dungeons & Dragons. I'm an avid lover of video games, including (but not limited to) Stardew Valley, Overwatch, Super Mario Odyssey, Legend of Zelda: Breath of the Wild, and Shadow of the Colossus. Outside of work-related topics, you can talk with me about baking, the art of drag, and my family's pet dog (pictured right).</p>
+      </section>
+      <section class="col-lg-6">
+        <img class="rounded" src="img/selfie.jpg" alt="sample image">
+      </section>
+    </div>
+    </div> <!-- row -->
+
+    <!-- <div class="card-footer" id="styleguide-footer">
       <a href="styleguide.html">STYLEGUIDE</a> |  <a href="citations.html">CITATIONS</a>
-    </footer>
-  </body>
+    </div> -->
+  </div><!-- container -->
+
+  <footer class="footer fixed-bottom" id="styleguide-footer">
+    <a href="styleguide.html">STYLEGUIDE</a> |  <a href="citations.html">CITATIONS</a>
+  </footer>
+
+
+
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
 </html>

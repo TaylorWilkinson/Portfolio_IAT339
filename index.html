@@ -1,43 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Taylor Wilkinson - Portfolio - Home</title>
-
+<head>
+  <title>Bootstrap Portfolio - Home </title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- Stylesheets -->
+    <!-- Normalize stylesheet -->
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Personal Stylesheets -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/flexbox.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-  </head>
+</head>
 
-  <body>
-    <nav>
-      <ul class="sub-container">
-        <li class="nav-logo"><a href="index.html" class="nav-logo-item">TAYLOR WILKINSON</a> </li>
-        <li><a href="projects.html" class="nav-item">WORK</a></li>
-        <li><a href="about.html" class="nav-item">ABOUT</a></li>
-      </ul>
-    </nav>
+<body id="index-page">
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-light bg-white navbar-expand-sm" id="navbar-bg">
+    <div class="container">
 
-    <section class="content">
-      <div class = "full banner">
-        <img src="img/studious-chef-code.png" class="full-img" alt="Screenshot of code written by myself for The Stuidous Chef project">
-        <div class="banner-txt">
-          <h1 class="banner-title">"HELLO, WORLD!"</h1>
-          <h2 class="banner-description">My name is Taylor Wilkinson. I'm a front-end web developer based out of Vancouver, BC.</h2>
-          <h2 class="banner-description">I care about creating responsive websites and functional user experiences through the use of efficient and clean code.</h2>
-        </div>
-      </div>
-    </section>
+      <a href="index.html" class="nav-item nav-link active navbar-brand" id="navLogo">
+        <img src="img/icon.png">
+      </a>
 
-    <footer>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNavBar" aria-controls="toggleNavBar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> <!-- hamburger button -->
+
+      <div class="collapse navbar-collapse" id="toggleNavBar">
+        <div class="navbar-nav ml-auto">
+          <a href="projects.html" class="nav-item nav-link" id="navLink">WORK</a>
+          <a href="about.html" class="nav-item nav-link" id="navLink">ABOUT</a>
+        </div> <!-- Navigation bar -->
+      </div> <!-- Collapse -->
+    </div>
+  </nav>
+
+  <div class="container-flex ml-auto">
+    <!-- <img src="img/studious-chef-JScode.png" class="img-fluid" id="bannerImage" alt="Screenshot of code written by myself for The Stuidous Chef project"> -->
+
+    <div class="banner-txt">
+      <h1 class="banner-title">"HELLO, WORLD!"</h1>
+      <h2 class="banner-description">My name is Taylor Wilkinson. I'm a front-end web developer based out of Vancouver, BC.</h2>
+      <h2 class="banner-description">I care about creating responsive websites and functional user experiences through the use of efficient and clean code.</h2>
+    </div>
+
+    <!-- <div class="card-footer text-muted fixed-bottom" id="styleguide-footer">
       <a href="styleguide.html">STYLEGUIDE</a> |  <a href="citations.html">CITATIONS</a>
-    </footer>
-  </body>
+    </div> -->
+  </div><!-- container -->
+
+  <footer class="footer fixed-bottom" id="styleguide-footer">
+    <a href="styleguide.html">STYLEGUIDE</a> |  <a href="citations.html">CITATIONS</a>
+  </footer>
+
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
 </html>
