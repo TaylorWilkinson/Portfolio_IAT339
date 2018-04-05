@@ -57,17 +57,29 @@ header {
   margin-bottom: 2rem;
 }
 
-/* Style Guide Code */
 pre {
   display: block;
+  height: 40vh;
+  overflow: auto;
+  word-wrap: normal;
   white-space: pre-wrap;
 }
 
+/* Code Snippets*/
 section code {
-  background-color: #DADADA;
-  padding: 0.5em 0.75em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 80%;
+  color: #88BBD6;
+  background-color: #F4F4F4;
+  padding: 0.5rem 1.5rem;
   display: block;
   max-width:100%
+}
+
+#snippet {
+  font-style: italic;
+  font-size: 0.75rem;
 }
 
 /* Forms & Input */
@@ -265,6 +277,7 @@ nav li {
 }
 
 #navLink {
+  font-family: 'Raleway', sans-serif;
   padding-left: 1rem;
   color: #2A2A2A;
   -webkit-transition: color 0.5s ease-out;

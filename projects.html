@@ -101,13 +101,112 @@
             <p>With this project, I had the opportunity to learn several new programming languages as well as gaining more experience with HTML and CSS. The webpages were coded in PHP, with embedded HTML and CSS in order to realize the design. AJAX was used in order to support live filtering and updating on the recipe browsing page. Finally, MySQL was used to handle database requests, such as logging in or fetching recipes from the "recipe" database.</p>
           </section>
           <section class="col-lg-6">
-            <figure>
+            <pre><code>
+&lt;body&gt;
+  &lt;!-- Navigation Bar --&gt;
+  &lt;?php require_once("required/nav_bar.php"); ?&gt;
+
+  &lt;section class = "login-panel"&gt;
+    &lt;div class = "login-image"&gt;
+      &lt;img src="img/pizza.jpeg" alt="login page img"&gt;
+      &lt;h1&gt;LOGIN&lt;/h1&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;?php
+    //If user is already logged in as visitor
+    if(isset($_SESSION['valid_visitor'])){
+      //logged as valid visitor
+      echo "&lt;p&gt;Already logged in as ".$_SESSION['valid_member']."&lt;/p&gt;";
+    }
+
+    //authenticating if members are valid
+    if(!isset($_SESSION['valid_member'])){
+      //if there's no 'valid_visitor' session,
+      //and there's a posted visitor user & pass,
+      //valid_visitor is set to the submitted vis_username
+
+      if(isset($_POST['submit'])){
+        //check if form was filled
+        if(isset($_POST['mbr_username'])){
+          $member_user = $_POST['mbr_username'];
+        }
+        else {
+          echo "&lt;p&gt;Please enter a username!&lt;/p&gt;";
+          die;
+        }
+
+        if (isset($_POST['mbr_pass'])) {
+          //login info needed
+          $member_pass = $_POST['mbr_pass'];
+          $member_pass = hash("sha1", $member_pass);
+        } else {
+          echo "&lt;p&gt;Please enter a password&lt;/p&gt;";
+          die;
+        }
+
+        //Perform DB query
+        $query = &lt;&lt;&lt;mbr
+        SELECT username, pass
+        FROM members
+        WHERE username="$member_user"
+        AND pass="$member_pass";
+mbr;
+        //test query
+        //echo $query;
+
+        //Check results
+        $result = mysqli_query($connection, $query);
+
+        $row = mysqli_fetch_row($result);
+        $count = $row[0];
+
+        if(empty($row)){
+          echo "&lt;p&gt;Invalid Login Info!&lt;br/&gt;Please try again.&lt;/p&gt;";
+        } else {
+          if($count){
+            $_SESSION['valid_member'] = $_POST["mbr_username"];
+            header('Location: logged_in.php');
+          }
+        }
+
+        // If there's an error, print it
+        if ($db-&gt;connect_error)  {
+          die('Connect Error: ' . $db-&gt;connect_error);
+        }
+
+        // Close DB connection
+        $db-&gt;close();
+      }
+    }
+
+    //if user is logged in as an authenticated member
+    if(isset($_SESSION["valid_member"])) {
+      header('Location: logged_in.php');
+    } else {
+      //the member was not authenticated yet, or failed previously.
+      //Show the form here.
+      ?&gt;
+
+    &lt;!-- Login form --&gt;
+    &lt;form name="login_mbr_input" action = "login_mbr_auth.php" method="POST"&gt;
+      &lt;h2&gt;Member Log In&lt;/h2&gt;
+      &lt;input class="form-input" type="text" name="mbr_username" placeholder="User Name"&gt;&lt;br&gt;
+        &lt;input class="form-input" type="password" name="mbr_pass" placeholder="Password"&gt;&lt;br&gt;
+        &lt;input class="form-button button-grey" name="submit" type="submit" value="Submit"&gt;
+      &lt;p&gt;Don't have a member account? &lt;a href="mbrRegForm.php"&gt;Sign up!&lt;/a&gt;&lt;/p&gt;
+    &lt;/form&gt;
+    &lt;?php
+  }
+
+  //Main menu bar for all pages
+    require("required/footer.php"); ?&gt;
+&lt;/body&gt;</code></pre> <!--The Studious Chef's MySQL -->
+            <p id="snippet">Code snippet of code from Retrofit Your Home's "Enviornment" secondary navigation</p>
+            <!-- <figure>
               <img src="img/studious-chef-code.png" alt="Screenshot of the Sublime text editor workspace, displaying the browse.php file.">
               <figcaption>Screenshot of the Sublime text editor workspace, displaying the browse.php file.</figcaption>
-            </figure>
-            <figure>
-
-            </figure>
+            </figure> -->
           </section>
         </div><!-- close row -->
 
@@ -196,10 +295,45 @@
             <p>All team members contributed to writing equal portions of the website's code. I coded environment page and it's two subsections. Additionally, I was responsible for consolidating all 11 pages and maintaining their responsive design. HTML5 and CSS were used to build the site.</p>
           </section>
           <section class="col-lg-6">
-            <figure>
+            <pre><code>&lt;section class = "subpage-navigation"&gt;
+            &lt;div class="subpage-grid-col-1of1"&gt;
+            &lt;/div&gt;
+            &lt;div class="subpage-grid-col-1of2"&gt;
+            	&lt;div class="info-sections"&gt;
+                &lt;div&gt;&lt;img src = "img/efficiencyIcon.png" alt="house diagram" id="house"&gt;&lt;/div&gt;
+            	  &lt;div&gt;
+                  &lt;h3&gt;energy efficiency&lt;/h3&gt;
+            		&lt;/div&gt;
+            		&lt;div&gt;
+            		  &lt;p id="environment-nav"&gt;Having an updated system in your home means that there will be less wasted energy due to a more efficient system .&lt;/p&gt;
+            		&lt;/div&gt;
+            		&lt;div&gt;
+                  &lt;a href="energyEfficiency.html" class="button-default" id="environment-learn-button"&gt;Learn More&lt;/a&gt;
+                &lt;/div&gt;
+            	&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="subpage-grid-col-2of2"&gt;
+              &lt;div class="info-sections" id="lifestyle-section"&gt;
+                &lt;div&gt;&lt;img src = "img/energyGuideIcon.png" alt="house diagram"&gt;&lt;/div&gt;
+                &lt;div&gt;
+                  &lt;h3&gt;energy guide&lt;/h3&gt;
+            		&lt;/div&gt;
+            		&lt;div&gt;
+            		  &lt;p id="environment-nav"&gt;
+              			Even if you upgrade only one system, the overall efficiency of your home will benefit.
+            			&lt;/p&gt;
+            		&lt;/div&gt;
+            		&lt;div&gt;
+                  &lt;a href="energyGuide.html" class="button-default" id="lifestyle-learn-button"&gt;Learn More&lt;/a&gt;
+            		&lt;/div&gt;
+            	&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;/section&gt;</code></pre> <!--code for Retrofit Your Home - Environment Page -->
+            <p id="snippet">Code snippet of code from Retrofit Your Home's "Enviornment" secondary navigation</p>
+            <!-- <figure>
               <img src="img/sublime-screenshot.png" alt="Screenshot of the Sublime text editor workspace, displaying the landing page code">
               <figcaption>Screenshot of the Sublime text editor workspace, displaying the landing page code.</figcaption>
-            </figure>
+            </figure> -->
             <figure>
 
             </figure>
@@ -238,13 +372,7 @@
             <h2>reflections</h2>
             <p>Given time constraints provided by the course, ensuring that the website was perfectly responsive and consistent became difficult when combining all of the pages. By referring to the static mock-ups our team had made as a guide, we were able to finesse the code until we had a final product that provided a fairly consistent experience across the entire site.</p>
             <p>Our team had initially planned to use a carousel format for going through the website. However, we found issues with usability and felt that it inhibited how we wanted our user to move throughout the site. After several iterations, we decided on a full-page styled website, so the user would be able to easily access information from the landing page, and would allow for more meaningful user flow.</p>
-            <a class="cta-button" href="http://www.sfu.ca/~tjwilkin/IAT%20235/Project%204%20-%20April,%20Salathiel,%20Taylor/P04/landingPage.html">SEE WEBSITE</a>
-          </section>
-          <section class="col-lg-6">
-            <!-- <figure>
-              <img src="img/studious chef_mockup_browse.png" alt="Mockup of The Studious Chef's recipe page">
-              <figcaption>Original proposed ER model diagram for The Studious Chef. March 2017.</figcaption>
-            </figure> -->
+            <a class="cta-button" href="http://www.sfu.ca/~tjwilkin/IAT%20235/Project%204%20-%20April,%20Salathiel,%20Taylor/P04/landingPage.html" target="_blank"v>SEE WEBSITE</a>
           </section>
         </div><!-- close row -->
       </div> <!-- close col-lg-12 -->
