@@ -24,10 +24,9 @@
   <!-- NAV BAR -->
   <nav class="navbar navbar-light navbar-expand-sm" id="navbar-bg">
     <div class="container">
-
       <a href="index.html" class="nav-item nav-link active navbar-brand" id="navLogo">
         <img src="img/icon.png">
-      </a>
+      </a><!-- icon image -->
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNavBar" aria-controls="toggleNavBar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -48,210 +47,212 @@
       <h1 class="pull-left">projects</h1>
       <p>Feel free to check out my <a href="img/TaylorWilkinson_Resume_2018.pdf" target="_blank">resume</a>, as well as my <a href="https://github.com/TaylorWilkinson/" target="_blank">GitHub</a> for a more detailed view of some of my coding work.</p>
     </div> <!-- close page header column -->
+
     <div class="row project-row">
       <section class="col-sm-6 text-center">
-        <h1><a href="#studious" class="page-scroll">The Studious Chef</a></h1>
-        <a href="#studious" class="page-scroll">
-          <img id="#project-img" src="img/studious chef_mockup_home.png" alt="Mockup image that displays The Studious Chef on a desktop computer">
-        </a>
-      </section>
+        <h1>The Studious Chef</h1>
+        <img id="#project-img" src="img/studious chef_mockup_home.png" alt="Mockup image that displays The Studious Chef on a desktop computer">
+        <button class="cta-button page-scroll" type="button" data-toggle="collapse" data-target="#toggleStudious" aria-expanded="false" aria-controls="toggleStudious">MORE DETAILS</button><!-- toggle Studious Chef project -->
+      </section><!-- close studious chef -->
+
+
       <section class="col-sm-6 text-center">
-        <h1><a href="#retrofit" class="page-scroll">Retrofit Your Home</a></h1>
-        <a href="#retrofit" class="page-scroll">
-          <img id="#project-img" src="img/retrofit-mockup.png" alt="Mockup image that displays the Retrofit Your Home website on a desktop computer">
-        </a>
+        <h1>Retrofit Your Home</h1>
+        <img id="#project-img" src="img/retrofit-mockup.png" alt="Mockup image that displays the Retrofit Your Home website on a desktop computer">
+
+        <button class="cta-button page-scroll" type="button" data-toggle="collapse" data-target="#toggleRetrofit" aria-expanded="false" aria-controls="toggleRetrofit">MORE DETAILS</button><!-- toggle Retrofit Your Home project -->
       </section>
     </div><!-- close row -->
-
-    <!-- <div class="card-footer" id="styleguide-footer">
-      <a href="styleguide.html">STYLEGUIDE</a> |  <a href="citations.html">CITATIONS</a>
-    </div> -->
   </div><!-- container -->
 
   <!-- PROJECT #1 - STUDIOUS CHEF SECTION -->
-  <div class="container ml-auto project-section" id="studious">
-    <div class="col-lg-12">
-      <div class="row project-row">
-        <h1>The Studious Chef</h1>
-      </div> <!--close column -->
+  <div class="collapse" id="toggleStudious">
+    <div class="container ml-auto project-section" id="studious">
+      <div class="col-lg-12">
+        <div class="row project-row">
+          <h1>The Studious Chef</h1>
+        </div> <!--close column -->
 
-      <div class="row project-row">
-        <section class="col-lg-4">
-          <h2>team:</h2>
-          <p>Individual project</p>
-        </section>
-        <section class="col-lg-4">
-          <h2>tools:</h2>
-          <p>XAMPP, MySQL, PHP, HTML, CSS, AJAX</p>
-        </section>
-        <section class="col-lg-4">
-          <h2>my role:</h2>
-          <p>Web Developer & Designer</p>
-        </section>
-      </div><!-- close row -->
+        <div class="row project-row">
+          <section class="col-lg-4">
+            <h2>team:</h2>
+            <p>Individual project</p>
+          </section>
+          <section class="col-lg-4">
+            <h2>tools:</h2>
+            <p>XAMPP, MySQL, PHP, HTML, CSS, AJAX</p>
+          </section>
+          <section class="col-lg-4">
+            <h2>my role:</h2>
+            <p>Web Developer & Designer</p>
+          </section>
+        </div><!-- close row -->
 
-      <div class="row project-row">
-        <section class="col-lg-6">
-          <h2>brief:</h2>
-          <p>Develop a web application using a database of our own choosing that implements a set of required technologies. The final course project for Internet Computing Technologies (IAT 352). 2017.</p>
-        </section>
-      </div><!-- close row -->
+        <div class="row project-row">
+          <section class="col-lg-6">
+            <h2>brief:</h2>
+            <p>Develop a web application using a database of our own choosing that implements a set of required technologies. The final course project for Internet Computing Technologies (IAT 352). 2017.</p>
+          </section>
+        </div><!-- close row -->
 
-      <div class="row project-row">
-        <section class="col-lg-6">
-          <h2>coding</h2>
-          <p>With this project, I had the opportunity to learn several new programming languages as well as gaining more experience with HTML and CSS. The webpages were coded in PHP, with embedded HTML and CSS in order to realize the design. AJAX was used in order to support live filtering and updating on the recipe browsing page. Finally, MySQL was used to handle database requests, such as logging in or fetching recipes from the "recipe" database.</p>
-        </section>
-        <section class="col-lg-6">
-          <figure>
-            <img src="img/studious-chef-code.png" alt="Screenshot of the Sublime text editor workspace, displaying the browse.php file.">
-            <figcaption>Screenshot of the Sublime text editor workspace, displaying the browse.php file.</figcaption>
-          </figure>
-          <figure>
+        <div class="row project-row">
+          <section class="col-lg-6">
+            <h2>coding</h2>
+            <p>With this project, I had the opportunity to learn several new programming languages as well as gaining more experience with HTML and CSS. The webpages were coded in PHP, with embedded HTML and CSS in order to realize the design. AJAX was used in order to support live filtering and updating on the recipe browsing page. Finally, MySQL was used to handle database requests, such as logging in or fetching recipes from the "recipe" database.</p>
+          </section>
+          <section class="col-lg-6">
+            <figure>
+              <img src="img/studious-chef-code.png" alt="Screenshot of the Sublime text editor workspace, displaying the browse.php file.">
+              <figcaption>Screenshot of the Sublime text editor workspace, displaying the browse.php file.</figcaption>
+            </figure>
+            <figure>
 
-          </figure>
-        </section>
-      </div><!-- close row -->
+            </figure>
+          </section>
+        </div><!-- close row -->
 
-      <div class="row project-row">
-        <section class="col-lg-6">
-          <h2>database design</h2>
-          <p>For The Studious Chef, the conceptual database design was realized through ER diagrams. This helped to determine website functionality in regards to the three databases the site used: members, visitors and recipes. The database of recipes was built in XAMPP with 20 recipes to begin with, which allowed for non-registered users to still browse some content.</p>
-        </section>
-        <section class="col-lg-6">
-          <figure>
-            <img src="img/chef_XAMPP.png" alt="Image of the original proposed ER model diagram for The Studious Chef">
-            <figcaption>Image of the original proposed ER model diagram for The Studious Chef<figcaption>
-          <figure>
+        <div class="row project-row">
+          <section class="col-lg-6">
+            <h2>database design</h2>
+            <p>For The Studious Chef, the conceptual database design was realized through ER diagrams. This helped to determine website functionality in regards to the three databases the site used: members, visitors and recipes. The database of recipes was built in XAMPP with 20 recipes to begin with, which allowed for non-registered users to still browse some content.</p>
+          </section>
+          <section class="col-lg-6">
+            <figure>
+              <img src="img/chef_XAMPP.png" alt="Image of the original proposed ER model diagram for The Studious Chef">
+              <figcaption>Image of the original proposed ER model diagram for The Studious Chef<figcaption>
+            <figure>
 
-          </figure>
-        </section>
-      </div><!-- close row -->
+            </figure>
+          </section>
+        </div><!-- close row -->
 
-      <div class="row project-row">
-        <section class="col-lg-6">
-          <h2>design & development</h2>
-          <p>The Studious Chef aims to help students with cooking proper meals for themselves, instead of ordering takeout or making basic mac 'n cheese meals. It helps these users by providing a consolidated list of delicious recipes posted by student users, for students. With this in mind, I wanted this website to look clean, simple and approachable to the user, so I restricted the colours being used to black and white with some powder blue accents. The banner pictures were free stock photos picked from Pexels.com, which were all slightly muted with a lower brightness in CSS. This allowed for consistency between all of the images, even if some were more vibrant than others.</p>
-          <p>Instead of having 5 different pages to be loaded for each list of recipes, AJAX was implemented on the "Browse" page so that the tables could change and be updated live on the one page.</p>
-        </section>
-        <section class="col-lg-6">
-          <figure>
-            <img src="img/studious chef_mockup_browse.png" alt="Mockup of The Studious Chef's browse page">
-            <figcaption>Mockup of The Studious Chef's "Browse Recipes" page. April 2017.</figcaption>
-          </figure>
-        </section>
-      </div><!-- close row -->
+        <div class="row project-row">
+          <section class="col-lg-6">
+            <h2>design & development</h2>
+            <p>The Studious Chef aims to help students with cooking proper meals for themselves, instead of ordering takeout or making basic mac 'n cheese meals. It helps these users by providing a consolidated list of delicious recipes posted by student users, for students. With this in mind, I wanted this website to look clean, simple and approachable to the user, so I restricted the colours being used to black and white with some powder blue accents. The banner pictures were free stock photos picked from Pexels.com, which were all slightly muted with a lower brightness in CSS. This allowed for consistency between all of the images, even if some were more vibrant than others.</p>
+            <p>Instead of having 5 different pages to be loaded for each list of recipes, AJAX was implemented on the "Browse" page so that the tables could change and be updated live on the one page.</p>
+          </section>
+          <section class="col-lg-6">
+            <figure>
+              <img src="img/studious chef_mockup_browse.png" alt="Mockup of The Studious Chef's browse page">
+              <figcaption>Mockup of The Studious Chef's "Browse Recipes" page. April 2017.</figcaption>
+            </figure>
+          </section>
+        </div><!-- close row -->
 
-      <div class="row project-row">
-        <section class="col-lg-6">
-          <h2>reflections</h2>
-          <p>One of the original proposed ideas for The Studious Chef was for members to have profile pages where visitors could see their posted recipes, their social media feeds (if provided by the member), and follow members for their recipes. That way, visitors would also have a feed of recipes from their preferred members. Unfortunately this was too difficult given the scope of the project, and this feature was dropped.</p>
-          <p>To bring this project to completion, I would not only implement these features, but I would also allow for images to be uploaded with the recipes to entice other users by showing the delicious result. I would also fix the search page so that it was fully functional, allowing for a more direct search instead of passive browsing.</p>
-          <p>Given that this project was my first experience working with PHP, MySQL, and AJAX, I'm very pleased with the final outcome. The design achieves the look that I had envisioned in early stages of ideation, and the core database functionality is operational.</p>
-        </section>
-        <section class="col-lg-6">
-          <!-- <figure>
-            <img src="img/studious chef_mockup_browse.png" alt="Mockup of The Studious Chef's recipe page">
-            <figcaption>Original proposed ER model diagram for The Studious Chef. March 2017.</figcaption>
-          </figure> -->
-        </section>
-      </div><!-- close row -->
-    </div> <!-- close col-lg-12 -->
-  </div>
+        <div class="row project-row">
+          <section class="col-lg-6">
+            <h2>reflections</h2>
+            <p>One of the original proposed ideas for The Studious Chef was for members to have profile pages where visitors could see their posted recipes, their social media feeds (if provided by the member), and follow members for their recipes. That way, visitors would also have a feed of recipes from their preferred members. Unfortunately this was too difficult given the scope of the project, and this feature was dropped.</p>
+            <p>To bring this project to completion, I would not only implement these features, but I would also allow for images to be uploaded with the recipes to entice other users by showing the delicious result. I would also fix the search page so that it was fully functional, allowing for a more direct search instead of passive browsing.</p>
+            <p>Given that this project was my first experience working with PHP, MySQL, and AJAX, I'm very pleased with the final outcome. The design achieves the look that I had envisioned in early stages of ideation, and the core database functionality is operational.</p>
+          </section>
+          <section class="col-lg-6">
+            <!-- <figure>
+              <img src="img/studious chef_mockup_browse.png" alt="Mockup of The Studious Chef's recipe page">
+              <figcaption>Original proposed ER model diagram for The Studious Chef. March 2017.</figcaption>
+            </figure> -->
+          </section>
+        </div><!-- close row -->
+      </div> <!-- close col-lg-12 -->
+    </div> <!--close container -->
+  </div> <!--close collapse div -->
 
 
 
   <!-- PROJECT #2 - RETROFIT YOUR HOME SECTION -->
-  <div class="container ml-auto project-section" id="retrofit">
-    <div class="col-lg-12">
-      <div class="row project-row">
-        <h1>Retrofit Your Home</h1>
-      </div> <!--close column -->
+  <div class="collapse" id="toggleRetrofit">
+    <div class="container ml-auto project-section" id="retrofit">
+      <div class="col-lg-12">
+        <div class="row project-row">
+          <h1>Retrofit Your Home</h1>
+        </div> <!--close column -->
 
-      <div class="row project-row">
-        <section class="col-lg-4">
-          <h2>team:</h2>
-          <p>April Diax, Salathiel Wells, Taylor Wilkinson</p>
-        </section>
-        <section class="col-lg-4">
-          <h2>tools:</h2>
-          <p>AxureRP, HTML, CSS, Adobe Illustrator + Photoshop</p>
-        </section>
-        <section class="col-lg-4">
-          <h2>my role:</h2>
-          <p>Web Developer; User Experience Developer</p>
-        </section>
-      </div><!-- close row -->
+        <div class="row project-row">
+          <section class="col-lg-4">
+            <h2>team:</h2>
+            <p>April Diax, Salathiel Wells, Taylor Wilkinson</p>
+          </section>
+          <section class="col-lg-4">
+            <h2>tools:</h2>
+            <p>AxureRP, HTML, CSS, Adobe Illustrator + Photoshop</p>
+          </section>
+          <section class="col-lg-4">
+            <h2>my role:</h2>
+            <p>Web Developer; User Experience Developer</p>
+          </section>
+        </div><!-- close row -->
 
-      <div class="row project-row">
-        <section class="col-lg-6">
-          <h2>brief:</h2>
-          <p>Design, code and present a responsive website about retrofitting your home, based on data provided by City Studio Vancouver. This was a group course project for Information Design course (IAT 235). 2015.</p>
-        </section>
+        <div class="row project-row">
+          <section class="col-lg-6">
+            <h2>brief:</h2>
+            <p>Design, code and present a responsive website about retrofitting your home, based on data provided by City Studio Vancouver. This was a group course project for Information Design course (IAT 235). 2015.</p>
+          </section>
 
-      </div><!-- close row -->
-      <div class="row project-row">
-        <section class="col-lg-6">
-          <h2>coding</h2>
-          <p>All team members contributed to writing equal portions of the website's code. I coded environment page and it's two subsections. Additionally, I was responsible for consolidating all 11 pages and maintaining their responsive design. HTML5 and CSS were used to build the site.</p>
-        </section>
-        <section class="col-lg-6">
-          <figure>
-            <img src="img/sublime-screenshot.png" alt="Screenshot of the Sublime text editor workspace, displaying the landing page code">
-            <figcaption>Screenshot of the Sublime text editor workspace, displaying the landing page code.</figcaption>
-          </figure>
-          <figure>
+        </div><!-- close row -->
+        <div class="row project-row">
+          <section class="col-lg-6">
+            <h2>coding</h2>
+            <p>All team members contributed to writing equal portions of the website's code. I coded environment page and it's two subsections. Additionally, I was responsible for consolidating all 11 pages and maintaining their responsive design. HTML5 and CSS were used to build the site.</p>
+          </section>
+          <section class="col-lg-6">
+            <figure>
+              <img src="img/sublime-screenshot.png" alt="Screenshot of the Sublime text editor workspace, displaying the landing page code">
+              <figcaption>Screenshot of the Sublime text editor workspace, displaying the landing page code.</figcaption>
+            </figure>
+            <figure>
 
-          </figure>
-        </section>
-      </div><!-- close row -->
+            </figure>
+          </section>
+        </div><!-- close row -->
 
-      <div class="row project-row">
-        <section class="col-lg-6">
-          <h2>information architecture</h2>
-          <p>After analyzing the provided data of 500 homes, we determined three factors to consider when retrofitting one's home: cost, environmental and lifestyle. This data allowed us to define our content, and determine the information architecture of our website through basic wireframing.</p>
-          <p>Wireframes at this stage were made by sketching or utilizing text to help us understand how the user would go through the website to achieve a given goal, whether it was learning about environmental factors or cost information.</p>
-        </section>
-        <section class="col-lg-6">
-          <figure>
-            <img src="img/whiteboard-drawing.jpg" alt="Photograph of our team's sketching to determine information architecture">
-            <figcaption>Photograph of our team's sketching to determine information architecture.</figcaption>
-          </figure>
-        </section>
-      </div><!-- close row -->
+        <div class="row project-row">
+          <section class="col-lg-6">
+            <h2>information architecture</h2>
+            <p>After analyzing the provided data of 500 homes, we determined three factors to consider when retrofitting one's home: cost, environmental and lifestyle. This data allowed us to define our content, and determine the information architecture of our website through basic wireframing.</p>
+            <p>Wireframes at this stage were made by sketching or utilizing text to help us understand how the user would go through the website to achieve a given goal, whether it was learning about environmental factors or cost information.</p>
+          </section>
+          <section class="col-lg-6">
+            <figure>
+              <img src="img/whiteboard-drawing.jpg" alt="Photograph of our team's sketching to determine information architecture">
+              <figcaption>Photograph of our team's sketching to determine information architecture.</figcaption>
+            </figure>
+          </section>
+        </div><!-- close row -->
 
-      <div class="row project-row">
-        <section class="col-lg-6">
-          <h2>high fidelity wireframes</h2>
-          <p>After determining our desired user flow, we moved on to create higher fidelity wireframes of our website using Axure RP. In this phase we continued refining our content, created more detailed blocked elements and played with different interaction elements that we could incorporate.</p>
-        </section>
-        <section class="col-lg-6">
-          <figure>
-            <img src="img/retrofit-wireframe.png" alt="Photograph of our team's sketching to determine information architecture">
-            <figcaption>Photograph of our team's sketching to determine information architecture.</figcaption>
-          </figure>
-        </section>
-      </div><!-- close row -->
+        <div class="row project-row">
+          <section class="col-lg-6">
+            <h2>high fidelity wireframes</h2>
+            <p>After determining our desired user flow, we moved on to create higher fidelity wireframes of our website using Axure RP. In this phase we continued refining our content, created more detailed blocked elements and played with different interaction elements that we could incorporate.</p>
+          </section>
+          <section class="col-lg-6">
+            <figure>
+              <img src="img/retrofit-wireframe.png" alt="Photograph of our team's sketching to determine information architecture">
+              <figcaption>Photograph of our team's sketching to determine information architecture.</figcaption>
+            </figure>
+          </section>
+        </div><!-- close row -->
 
-      <div class="row project-row">
-        <section class="col-lg-6">
-          <h2>reflections</h2>
-          <p>Given time constraints provided by the course, ensuring that the website was perfectly responsive and consistent became difficult when combining all of the pages. By referring to the static mock-ups our team had made as a guide, we were able to finesse the code until we had a final product that provided a fairly consistent experience across the entire site.</p>
-          <p>Our team had initially planned to use a carousel format for going through the website. However, we found issues with usability and felt that it inhibited how we wanted our user to move throughout the site. After several iterations, we decided on a full-page styled website, so the user would be able to easily access information from the landing page, and would allow for more meaningful user flow.</p>
-          <a class="cta-button" href="http://www.sfu.ca/~tjwilkin/IAT%20235/Project%204%20-%20April,%20Salathiel,%20Taylor/P04/landingPage.html">SEE WEBSITE</a>
-        </section>
-        <section class="col-lg-6">
-          <!-- <figure>
-            <img src="img/studious chef_mockup_browse.png" alt="Mockup of The Studious Chef's recipe page">
-            <figcaption>Original proposed ER model diagram for The Studious Chef. March 2017.</figcaption>
-          </figure> -->
-        </section>
-      </div><!-- close row -->
-    </div> <!-- close col-lg-12 -->
+        <div class="row project-row">
+          <section class="col-lg-6">
+            <h2>reflections</h2>
+            <p>Given time constraints provided by the course, ensuring that the website was perfectly responsive and consistent became difficult when combining all of the pages. By referring to the static mock-ups our team had made as a guide, we were able to finesse the code until we had a final product that provided a fairly consistent experience across the entire site.</p>
+            <p>Our team had initially planned to use a carousel format for going through the website. However, we found issues with usability and felt that it inhibited how we wanted our user to move throughout the site. After several iterations, we decided on a full-page styled website, so the user would be able to easily access information from the landing page, and would allow for more meaningful user flow.</p>
+            <a class="cta-button" href="http://www.sfu.ca/~tjwilkin/IAT%20235/Project%204%20-%20April,%20Salathiel,%20Taylor/P04/landingPage.html">SEE WEBSITE</a>
+          </section>
+          <section class="col-lg-6">
+            <!-- <figure>
+              <img src="img/studious chef_mockup_browse.png" alt="Mockup of The Studious Chef's recipe page">
+              <figcaption>Original proposed ER model diagram for The Studious Chef. March 2017.</figcaption>
+            </figure> -->
+          </section>
+        </div><!-- close row -->
+      </div> <!-- close col-lg-12 -->
+    </div>
   </div>
 
 
-  <footer class="footer" id="styleguide-footer">
+  <footer class="footer bg-white" id="styleguide-footer">
     <a href="styleguide.html">STYLEGUIDE</a> |  <a href="citations.html">CITATIONS</a>
   </footer>
 
