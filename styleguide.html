@@ -10,8 +10,8 @@
   <!-- Bootstrap stylesheet -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Personal Stylesheets -->
-  <link href="css/styleguide-dist.css" rel="stylesheet">
-  <link href="css/styleguide-flexbox-dist.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styleguide.min.css">
+  <link rel="stylesheet" href="css/styleguide-flexbox.min.css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -23,17 +23,15 @@
   <div class="title">
     <header>
       <h1>Taylor Wilkinson</h1>
-      <h3>Episode III: The Revenge of the Portfolio
-      </header>
-    </div>
+      <h2>Episode III: The Revenge of the Portfolio</h2>
+    </header>
+  </div>
 
     <!-- NAVIGATION -->
     <div class="container">
       <div class="style-nav">
-        <h2>navigation</h2>
+        <h3>styleguide navigation</h3>
         <nav>
-          <a href="styleguide.html" class="nav-item">Styleguide</a>
-          <a href="#ethos" class="nav-item">Portfolio Ethos</a>
           <a href="#interactive" class="nav-item">Interactive Elements</a>
           <a href="#styling" class="nav-item">Text Styling</a>
           <a href="#combined" class="nav-item">Combined Elements</a>
@@ -45,13 +43,6 @@
       <!-- STYLE GUIDE -->
       <!-- Interactive Elements -->
       <div class="page-content">
-        <!-- <section id="ethos">
-          <h2>Portfolio Ethos</h2>
-          <p>With my portfolio, I'm wanting to </p>
-          <section class="element">
-          </section>
-        </section> -->
-
         <section id="interactive">
           <h2>Interactive Elements</h2>
           <!-- in-text link -->
@@ -69,35 +60,16 @@
           <section class="element">
             <h3>Buttons</h3>
             <h4>CSS selector</h4>
-            <p>".cta-button</p>
+            <p>".cta-button" or ".cta-prj-button"</p>
             <h4>Sample code:</h4>
             <pre>
               <code>&lt;button class="cta-button page-scroll" type="button" data-toggle="collapse" data-target="#toggleStudious" aria-expanded="false" aria-controls="toggleStudious"&gt;MORE DETAILS&lt;/button&gt;</code>
             </pre>
             <h4>Rendered element:</h4>
-            <button class="cta-button page-scroll" type="button" data-toggle="collapse" data-target="#toggleStudious" aria-expanded="false" aria-controls="toggleStudious">MORE DETAILS</button>
+            <button class="cta-button" type="button">MORE DETAILS</button>
+            <button class="cta-prj-button" type="button">MORE DETAILS</button>
           </section>
-
-          <!-- text input field & label -->
-          <section class="element">
-            <h3>Text Input Field & Label</h3>
-            <h4>CSS selector</h4>
-            <p>.text-input</p>
-            <h4>Sample code:</h4>
-            <pre>
-              <code>&lt;form class="text-input"&gt;
-                &lt;label for="example-info"&gt;Enter information:&lt;/label&gt;&lt;br&gt;
-                &lt;input type="text" name="example-info"&gt;
-                &lt;/form&gt;</code>
-              </pre>
-              <h4>Rendered element:</h4>
-              <form class="text-input">
-                <label for="example-info">Enter information:</label><br>
-                <input type="text" id="example-info">
-              </form>
-            </section>
-
-          </section>
+        </section>
 
           <!-- Text Styling -->
           <section id="styling">
@@ -194,15 +166,15 @@
               <pre><code>&lt;nav class="navbar navbar-light navbar-expand-sm" id="navbar-bg"&gt;
                 &lt;div class="container"&gt;
                   &lt;a href="index.html" class="nav-item nav-link active navbar-brand" id="navLogo"&gt;
-                    &lt;img src="img/icon.png"&gt;
-                  <&lt;/a&gt;
+                    &lt;img id="home-icon" src="img/icon.png" alt="Taylor Wilkinson portfolio icon"&gt;
+                  &lt;/a&gt;
                   &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNavBar" aria-controls="toggleNavBar" aria-expanded="false" aria-label="Toggle navigation"&gt;
                     &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
                   &lt;/button&gt;
                   &lt;div class="collapse navbar-collapse" id="toggleNavBar"&gt;
                     &lt;div class="navbar-nav ml-auto"&gt;
-                      &lt;a href="projects.html" class="nav-item nav-link" id="navLink"&gt;WORK&lt;/a&gt;
-                      &lt;a href="about.html" class="nav-item nav-link" id="navLink"&gt;ABOUT&lt;/a&gt;
+                      &lt;a href="projects.html" class="nav-item nav-link"&gt;WORK&lt;/a&gt;
+                      &lt;a href="about.html" class="nav-item nav-link"&gt;ABOUT&lt;/a&gt;
                     &lt;/div&gt;
                   &lt;/div&gt;
                 &lt;/div&gt;
@@ -213,7 +185,7 @@
               <nav class="navbar navbar-light navbar-expand-sm" id="navbar-bg">
                 <div class="container">
                   <a href="index.html" class="nav-item nav-link active navbar-brand" id="navLogo">
-                    <img src="img/icon.png">
+                    <img id="home-icon" src="img/icon.png" alt="Taylor Wilkinson portfolio icon">
                   </a><!-- icon image -->
 
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNavBar" aria-controls="toggleNavBar" aria-expanded="false" aria-label="Toggle navigation">
@@ -222,8 +194,8 @@
 
                   <div class="collapse navbar-collapse" id="toggleNavBar">
                     <div class="navbar-nav ml-auto">
-                      <a href="projects.html" class="nav-item nav-link" id="navLink">WORK</a>
-                      <a href="about.html" class="nav-item nav-link" id="navLink">ABOUT</a>
+                      <a href="projects.html" class="nav-item nav-link">WORK</a>
+                      <a href="about.html" class="nav-item nav-link navLink">ABOUT</a>
                     </div> <!-- Navigation bar -->
                   </div> <!-- Collapse -->
                 </div>
@@ -252,8 +224,14 @@
             </section>
           </div>
         </div>
+
+        <button onclick="topFunction()" id="backToTopButton" title="Go to top">Back To Top</button>
+
         <footer>
           <a href="styleguide.html">STYLEGUIDE</a> |  <a href="citations.html">CITATIONS</a> | <a href="index.html">HOME PAGE</a>
         </footer>
-      </body>
-      </html>
+
+        <!-- Personal Scripts -->
+        <script src="js/scrollToTop.min.js"></script>
+</body>
+</html>
