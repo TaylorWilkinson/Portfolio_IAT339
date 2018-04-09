@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Portfolio - Home </title>
+  <title>Home - Taylor Wilkinson - Portfolio</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Normalize stylesheet -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize-dist.css">
     <!-- Bootstrap stylesheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Personal Stylesheets -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/flexbox.css">
+    <!-- <link rel="stylesheet" href="css/main-dist.css"> -->
+    <!-- <link rel="stylesheet" href="css/flexbox-dist.css"> -->
+
+    <link rel="stylesheet" href="css/non-prepose-files/main.css">
+    <link rel="stylesheet" href="css/non-prepose-files/flexbox.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -26,8 +29,8 @@
     <div class="container">
 
       <a href="index.html" class="nav-item nav-link active navbar-brand" id="navLogo">
-        <img src="img/icon.png">
-      </a>
+        <img id="home-icon" src="img/icon.png" alt="Taylor Wilkinson portfolio icon">
+      </a><!-- icon image -->
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNavBar" aria-controls="toggleNavBar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -35,8 +38,8 @@
 
       <div class="collapse navbar-collapse" id="toggleNavBar">
         <div class="navbar-nav ml-auto">
-          <a href="projects.html" class="nav-item nav-link" id="navLink">WORK</a>
-          <a href="about.html" class="nav-item nav-link" id="navLink">ABOUT</a>
+          <a href="projects.html" class="nav-item nav-link">WORK</a>
+          <a href="about.html" class="nav-item nav-link navLink">ABOUT</a>
         </div> <!-- Navigation bar -->
       </div> <!-- Collapse -->
     </div>
@@ -46,9 +49,10 @@
     <img src="img/studious-chef-JScode.png" class="img-fluid" id="bannerImage" alt="Screenshot of code written by myself for The Stuidous Chef project">
 
     <div class="banner-txt">
-      <h1 class="banner-title">"HELLO, WORLD!"</h1>
-      <h2 class="banner-description">My name is Taylor Wilkinson. I'm a front-end web developer based out of Vancouver, BC.</h2>
-      <h2 class="banner-description">I care about creating responsive websites and functional user experiences through the use of efficient and clean code.</h2>
+      <h1 class="banner-title">TAYLOR WILKINSON</h1>
+      <h2 class="banner-description">Hello, World! I'm a front-end web developer based out of Vancouver, BC. I care about creating responsive websites and functional user experiences through the use of efficient and clean code.</h2>
+      <button class="cta-button" id="project-button" onClick="location.href='projects.html'"  type="button">RECENT PROJECTS</button>
+      <button class="cta-button" id="contact-button" onClick="location.href='mailto:tjwilkin@sfu.ca';" type="button">E-MAIL</button>
     </div>
 
   </div><!-- container -->

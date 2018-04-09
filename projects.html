@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Portfolio - Home </title>
+  <title>Projects - Taylor Wilkinson - Portfolio</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Normalize stylesheet -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize-dist.css">
     <!-- Bootstrap stylesheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Personal Stylesheets -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/main-dist.css">
+    <link rel="stylesheet" href="css/flexbox-dist.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -25,7 +25,7 @@
   <nav class="navbar navbar-light navbar-expand-sm" id="navbar-bg">
     <div class="container">
       <a href="index.html" class="nav-item nav-link active navbar-brand" id="navLogo">
-        <img src="img/icon.png">
+        <img id="home-icon" src="img/icon.png" alt="Taylor Wilkinson portfolio icon">
       </a><!-- icon image -->
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNavBar" aria-controls="toggleNavBar" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,8 +34,8 @@
 
       <div class="collapse navbar-collapse" id="toggleNavBar">
         <div class="navbar-nav ml-auto">
-          <a href="projects.html" class="nav-item nav-link" id="navLink">WORK</a>
-          <a href="about.html" class="nav-item nav-link" id="navLink">ABOUT</a>
+          <a href="projects.html" class="nav-item nav-link navLink">WORK</a>
+          <a href="about.html" class="nav-item nav-link navLink">ABOUT</a>
         </div> <!-- Navigation bar -->
       </div> <!-- Collapse -->
     </div>
@@ -49,18 +49,19 @@
     </div> <!-- close page header column -->
 
     <div class="row project-row">
-      <section class="col-sm-6 text-center">
-        <h1>The Studious Chef</h1>
-        <img id="#project-img" src="img/studious chef_mockup_home.png" alt="Mockup image that displays The Studious Chef on a desktop computer">
-        <button class="cta-button page-scroll" type="button" data-toggle="collapse" data-target="#toggleStudious" aria-expanded="false" aria-controls="toggleStudious">MORE DETAILS</button><!-- toggle Studious Chef project -->
+      <section id="project-1" class="col-lg text-center project-preview">
+        <h2>The Studious Chef</h2>
+        <img class="project-img" src="img/SC_mockup_home.png" alt="Mockup image that displays The Studious Chef on a desktop computer">
+        <p>A web application for students to post and share easy recipes. My first venture into database design and backend technologies.</p>
+        <button id="studious-button" class="cta-prj-button page-scroll" onClick="updateStudiousButton()" type="button" data-toggle="collapse" data-target="#toggleStudious" aria-expanded="false" aria-controls="toggleStudious" onClick="location.href='#studious'">READ MORE</button>
       </section><!-- close studious chef -->
 
-
-      <section class="col-sm-6 text-center">
-        <h1>Retrofit Your Home</h1>
-        <img id="#project-img" src="img/retrofit-mockup.png" alt="Mockup image that displays the Retrofit Your Home website on a desktop computer">
-
-        <button class="cta-button page-scroll" type="button" data-toggle="collapse" data-target="#toggleRetrofit" aria-expanded="false" aria-controls="toggleRetrofit">MORE DETAILS</button><!-- toggle Retrofit Your Home project -->
+      <section id="project-2" class="col-lg text-center project-preview">
+        <h2>Retrofit Your Home</h2>
+        <img class="project-img" src="img/retrofit_mockup_home.png" alt="Mockup image that displays the Retrofit Your Home website on a desktop computer">
+        <p>A website that teaches the benefits of retrofitting your home, based on data from City Studio Vancouver. <a href="http://www.sfu.ca/~tjwilkin/IAT%20235/Project%204%20-%20April,%20Salathiel,%20Taylor/P04/landingPage.html" target="_blank">Check it out here</a>.</p>
+        <button id="retrofit-button" class="cta-prj-button page-scroll" onClick="updateRetrofitButton()" type="button" data-toggle="collapse" data-target="#toggleRetrofit" aria-expanded="false" aria-controls="toggleRetrofit" onClick="location.href='#retrofit'">READ MORE</button>
+        <!-- toggle Retrofit Your Home project -->
       </section>
     </div><!-- close row -->
   </div><!-- container -->
@@ -202,11 +203,7 @@ mbr;
   //Main menu bar for all pages
     require("required/footer.php"); ?&gt;
 &lt;/body&gt;</code></pre> <!--The Studious Chef's MySQL -->
-            <p id="snippet">Code snippet of code from Retrofit Your Home's "Enviornment" secondary navigation</p>
-            <!-- <figure>
-              <img src="img/studious-chef-code.png" alt="Screenshot of the Sublime text editor workspace, displaying the browse.php file.">
-              <figcaption>Screenshot of the Sublime text editor workspace, displaying the browse.php file.</figcaption>
-            </figure> -->
+            <p class="snippet">Code snippet of code from The Studious Chef navigation bar, using MySQL to check if the user is logged in</p>
           </section>
         </div><!-- close row -->
 
@@ -218,9 +215,7 @@ mbr;
           <section class="col-lg-6">
             <figure>
               <img src="img/chef_XAMPP.png" alt="Image of the original proposed ER model diagram for The Studious Chef">
-              <figcaption>Image of the original proposed ER model diagram for The Studious Chef<figcaption>
-            <figure>
-
+              <figcaption>Image of the original proposed ER model diagram for The Studious Chef</figcaption>
             </figure>
           </section>
         </div><!-- close row -->
@@ -233,7 +228,7 @@ mbr;
           </section>
           <section class="col-lg-6">
             <figure>
-              <img src="img/studious chef_mockup_browse.png" alt="Mockup of The Studious Chef's browse page">
+              <img src="img/studious-chef-mockup-browse.png" alt="Mockup of The Studious Chef's browse page">
               <figcaption>Mockup of The Studious Chef's "Browse Recipes" page. April 2017.</figcaption>
             </figure>
           </section>
@@ -247,10 +242,10 @@ mbr;
             <p>Given that this project was my first experience working with PHP, MySQL, and AJAX, I'm very pleased with the final outcome. The design achieves the look that I had envisioned in early stages of ideation, and the core database functionality is operational.</p>
           </section>
           <section class="col-lg-6">
-            <!-- <figure>
-              <img src="img/studious chef_mockup_browse.png" alt="Mockup of The Studious Chef's recipe page">
-              <figcaption>Original proposed ER model diagram for The Studious Chef. March 2017.</figcaption>
-            </figure> -->
+            <figure>
+              <img src="img/studious-chef-login.gif" alt="Gif showing a user logging in as a visitor to The Studious Chef.">
+              <figcaption>Mockup of The Studious Chef's "Browse Recipes" page. April 2017.</figcaption>
+            </figure>
           </section>
         </div><!-- close row -->
       </div> <!-- close col-lg-12 -->
@@ -329,7 +324,7 @@ mbr;
             	&lt;/div&gt;
             &lt;/div&gt;
             &lt;/section&gt;</code></pre> <!--code for Retrofit Your Home - Environment Page -->
-            <p id="snippet">Code snippet of code from Retrofit Your Home's "Enviornment" secondary navigation</p>
+            <p class="snippet">Code snippet of code from Retrofit Your Home's "Enviornment" secondary navigation</p>
             <!-- <figure>
               <img src="img/sublime-screenshot.png" alt="Screenshot of the Sublime text editor workspace, displaying the landing page code">
               <figcaption>Screenshot of the Sublime text editor workspace, displaying the landing page code.</figcaption>
@@ -372,12 +367,20 @@ mbr;
             <h2>reflections</h2>
             <p>Given time constraints provided by the course, ensuring that the website was perfectly responsive and consistent became difficult when combining all of the pages. By referring to the static mock-ups our team had made as a guide, we were able to finesse the code until we had a final product that provided a fairly consistent experience across the entire site.</p>
             <p>Our team had initially planned to use a carousel format for going through the website. However, we found issues with usability and felt that it inhibited how we wanted our user to move throughout the site. After several iterations, we decided on a full-page styled website, so the user would be able to easily access information from the landing page, and would allow for more meaningful user flow.</p>
-            <a class="cta-button" href="http://www.sfu.ca/~tjwilkin/IAT%20235/Project%204%20-%20April,%20Salathiel,%20Taylor/P04/landingPage.html" target="_blank"v>SEE WEBSITE</a>
+            <a class="cta-button" href="http://www.sfu.ca/~tjwilkin/IAT%20235/Project%204%20-%20April,%20Salathiel,%20Taylor/P04/landingPage.html" target="_blank">SEE WEBSITE</a>
+          </section>
+          <section class="col-lg-6">
+            <figure>
+              <img src="img/retrofit-screenshot.png" alt="Long screenshot of the energy efficiency page">
+              <figcaption>Photograph of our team's sketching to determine information architecture.</figcaption>
+            </figure>
           </section>
         </div><!-- close row -->
       </div> <!-- close col-lg-12 -->
     </div>
   </div>
+
+  <button onclick="topFunction()" id="backToTopButton" title="Go to top">Back To Top</button>
 
 
   <footer class="footer bg-white" id="styleguide-footer">
@@ -385,9 +388,12 @@ mbr;
   </footer>
 
 
-
+  <!-- Bootstrap Scripts -->
   <script src="js/jquery.slim.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <!-- Other Scripts -->
+  <script src="js/updateProjectButtons.js"></script>
+  <script src="js/scrollToTop.js"></script>
 </body>
 </html>
